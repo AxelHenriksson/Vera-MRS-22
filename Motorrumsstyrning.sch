@@ -204,15 +204,15 @@ Wire Wire Line
 	10700 4550 10600 4550
 Wire Wire Line
 	10600 4550 10600 4450
-Text Notes 500  900  0    50   ~ 0
+Text Notes 500  800  0    50   ~ 0
 2. Se över vilka resistorvärden som behövs på 12-3.3V delarna
-Text Notes 500  1000 0    50   ~ 0
+Text Notes 500  900  0    50   ~ 0
 3. Se över ordning och antal i terminalblocket.
 Text Label 10700 5750 2    50   ~ 0
 Deadmans_12V
 Wire Wire Line
 	10700 5750 10100 5750
-Text Notes 500  1100 0    50   ~ 0
+Text Notes 500  1000 0    50   ~ 0
 4. Se över Deadman_Signal kontra Deadmans_Button
 Wire Notes Line
 	4250 550  5950 550 
@@ -226,7 +226,7 @@ Text Notes 4300 650  0    50   ~ 0
 12V to 5V linear regulator
 Wire Wire Line
 	800  7400 800  7500
-Text Notes 500  1200 0    50   ~ 0
+Text Notes 500  1100 0    50   ~ 0
 5. Verifiera att VREF är kopplad till VDD på NUCLEO genom lödbrygga enligt datablad.
 $Comp
 L Vera-MRS-21:NUCLEO-F303K8 U2
@@ -388,7 +388,7 @@ F 3 "~" H 3550 4700 50  0001 C CNN
 	1    3550 4700
 	1    0    0    -1  
 $EndComp
-Text Notes 500  1650 0    50   ~ 0
+Text Notes 500  1550 0    50   ~ 0
 SD-kort drivers: https://github.com/kiwih/cubemx-mmc-sd-card
 $Comp
 L Device:R_Small R2
@@ -596,9 +596,7 @@ F 3 "" H 6400 2950 50  0001 C CNN
 	1    6400 2950
 	1    0    0    -1  
 $EndComp
-Text Notes 500  800  0    50   ~ 0
--1. Se om uA7805 eller annan 12-5V finns, annars byt regulator
-Text Notes 500  1300 0    50   ~ 0
+Text Notes 500  1200 0    50   ~ 0
 6. Filtrera och begränsa +12V om VIN är kopplad till den.
 $Comp
 L Device:R_Small R9
@@ -746,7 +744,7 @@ U 1 1 60B95E0A
 P 5100 1000
 F 0 "U1" H 5100 1242 50  0000 C CNN
 F 1 "LM1084-5.0" H 5100 1151 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5100 1250 50  0001 C CIN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 5100 1250 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/lm1084.pdf" H 5100 1000 50  0001 C CNN
 	1    5100 1000
 	1    0    0    -1  

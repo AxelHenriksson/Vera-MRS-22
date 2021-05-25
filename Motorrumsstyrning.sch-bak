@@ -204,15 +204,15 @@ Wire Wire Line
 	10700 4550 10600 4550
 Wire Wire Line
 	10600 4550 10600 4450
-Text Notes 500  900  0    50   ~ 0
+Text Notes 500  800  0    50   ~ 0
 2. Se över vilka resistorvärden som behövs på 12-3.3V delarna
-Text Notes 500  1000 0    50   ~ 0
+Text Notes 500  900  0    50   ~ 0
 3. Se över ordning och antal i terminalblocket.
 Text Label 10700 5750 2    50   ~ 0
 Deadmans_12V
 Wire Wire Line
 	10700 5750 10100 5750
-Text Notes 500  1100 0    50   ~ 0
+Text Notes 500  1000 0    50   ~ 0
 4. Se över Deadman_Signal kontra Deadmans_Button
 Wire Notes Line
 	4250 550  5950 550 
@@ -226,7 +226,7 @@ Text Notes 4300 650  0    50   ~ 0
 12V to 5V linear regulator
 Wire Wire Line
 	800  7400 800  7500
-Text Notes 500  1200 0    50   ~ 0
+Text Notes 500  1100 0    50   ~ 0
 5. Verifiera att VREF är kopplad till VDD på NUCLEO genom lödbrygga enligt datablad.
 $Comp
 L Vera-MRS-21:NUCLEO-F303K8 U2
@@ -249,7 +249,7 @@ U 1 1 60AB2350
 P 10500 1500
 F 0 "R12" H 10559 1546 50  0000 L CNN
 F 1 "120R" H 10559 1455 50  0000 L CNN
-F 2 "" H 10500 1500 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 10500 1500 50  0001 C CNN
 F 3 "~" H 10500 1500 50  0001 C CNN
 	1    10500 1500
 	1    0    0    -1  
@@ -339,7 +339,7 @@ U 1 1 60AD3459
 P 2550 4700
 F 0 "R3" H 2609 4746 50  0000 L CNN
 F 1 "50k" H 2609 4655 50  0000 L CNN
-F 2 "" H 2550 4700 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 2550 4700 50  0001 C CNN
 F 3 "~" H 2550 4700 50  0001 C CNN
 	1    2550 4700
 	1    0    0    -1  
@@ -350,7 +350,7 @@ U 1 1 60AD411E
 P 2800 4700
 F 0 "R4" H 2859 4746 50  0000 L CNN
 F 1 "50k" H 2859 4655 50  0000 L CNN
-F 2 "" H 2800 4700 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 2800 4700 50  0001 C CNN
 F 3 "~" H 2800 4700 50  0001 C CNN
 	1    2800 4700
 	1    0    0    -1  
@@ -361,7 +361,7 @@ U 1 1 60AD43B2
 P 3050 4700
 F 0 "R5" H 3109 4746 50  0000 L CNN
 F 1 "50k" H 3109 4655 50  0000 L CNN
-F 2 "" H 3050 4700 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 3050 4700 50  0001 C CNN
 F 3 "~" H 3050 4700 50  0001 C CNN
 	1    3050 4700
 	1    0    0    -1  
@@ -372,7 +372,7 @@ U 1 1 60AD4597
 P 3300 4700
 F 0 "R6" H 3359 4746 50  0000 L CNN
 F 1 "50k" H 3359 4655 50  0000 L CNN
-F 2 "" H 3300 4700 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 3300 4700 50  0001 C CNN
 F 3 "~" H 3300 4700 50  0001 C CNN
 	1    3300 4700
 	1    0    0    -1  
@@ -383,12 +383,12 @@ U 1 1 60AD476B
 P 3550 4700
 F 0 "R7" H 3609 4746 50  0000 L CNN
 F 1 "50k" H 3609 4655 50  0000 L CNN
-F 2 "" H 3550 4700 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 3550 4700 50  0001 C CNN
 F 3 "~" H 3550 4700 50  0001 C CNN
 	1    3550 4700
 	1    0    0    -1  
 $EndComp
-Text Notes 500  1650 0    50   ~ 0
+Text Notes 500  1550 0    50   ~ 0
 SD-kort drivers: https://github.com/kiwih/cubemx-mmc-sd-card
 $Comp
 L Device:R_Small R2
@@ -396,7 +396,7 @@ U 1 1 60ADC5C7
 P 2300 4700
 F 0 "R2" H 2359 4746 50  0000 L CNN
 F 1 "50k" H 2359 4655 50  0000 L CNN
-F 2 "" H 2300 4700 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 2300 4700 50  0001 C CNN
 F 3 "~" H 2300 4700 50  0001 C CNN
 	1    2300 4700
 	1    0    0    -1  
@@ -407,7 +407,7 @@ U 1 1 60ADC8F8
 P 2050 4700
 F 0 "R1" H 2109 4746 50  0000 L CNN
 F 1 "50k" H 2109 4655 50  0000 L CNN
-F 2 "" H 2050 4700 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 2050 4700 50  0001 C CNN
 F 3 "~" H 2050 4700 50  0001 C CNN
 	1    2050 4700
 	1    0    0    -1  
@@ -596,9 +596,7 @@ F 3 "" H 6400 2950 50  0001 C CNN
 	1    6400 2950
 	1    0    0    -1  
 $EndComp
-Text Notes 500  800  0    50   ~ 0
--1. Se om uA7805 eller annan 12-5V finns, annars byt regulator
-Text Notes 500  1300 0    50   ~ 0
+Text Notes 500  1200 0    50   ~ 0
 6. Filtrera och begränsa +12V om VIN är kopplad till den.
 $Comp
 L Device:R_Small R9
@@ -606,7 +604,7 @@ U 1 1 60B3CEF3
 P 9400 5950
 F 0 "R9" H 9459 5996 50  0000 L CNN
 F 1 "10k" H 9459 5905 50  0000 L CNN
-F 2 "" H 9400 5950 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 9400 5950 50  0001 C CNN
 F 3 "~" H 9400 5950 50  0001 C CNN
 	1    9400 5950
 	1    0    0    -1  
@@ -617,7 +615,7 @@ U 1 1 60B3CEF9
 P 9400 5750
 F 0 "R8" H 9459 5796 50  0000 L CNN
 F 1 "4k2" H 9459 5705 50  0000 L CNN
-F 2 "" H 9400 5750 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 9400 5750 50  0001 C CNN
 F 3 "~" H 9400 5750 50  0001 C CNN
 	1    9400 5750
 	1    0    0    -1  
@@ -660,7 +658,7 @@ U 1 1 60949FD4
 P 10100 5850
 F 0 "R10" H 10159 5896 50  0000 L CNN
 F 1 "4k2" H 10159 5805 50  0000 L CNN
-F 2 "" H 10100 5850 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 10100 5850 50  0001 C CNN
 F 3 "~" H 10100 5850 50  0001 C CNN
 	1    10100 5850
 	1    0    0    -1  
@@ -671,7 +669,7 @@ U 1 1 60949B67
 P 10100 6050
 F 0 "R11" H 10159 6096 50  0000 L CNN
 F 1 "10k" H 10159 6005 50  0000 L CNN
-F 2 "" H 10100 6050 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 10100 6050 50  0001 C CNN
 F 3 "~" H 10100 6050 50  0001 C CNN
 	1    10100 6050
 	1    0    0    -1  
