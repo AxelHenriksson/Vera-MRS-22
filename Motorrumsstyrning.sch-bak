@@ -953,4 +953,9 @@ Connection ~ 10600 5250
 Wire Wire Line
 	10300 5350 10600 5350
 Connection ~ 10600 5350
+Wire Wire Line
+	9900 5550 10600 5550
+Connection ~ 10600 5550
+Text Notes 500  1400 0    50   ~ 0
+8. Göra plats för det elektromagnetiska frihjulet
 $EndSCHEMATC
