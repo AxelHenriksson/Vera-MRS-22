@@ -86,14 +86,14 @@ F 3 "~" H 1700 7300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x14 J2
+L Connector:Screw_Terminal_01x10 J2
 U 1 1 608EAA7B
-P 10900 5150
-F 0 "J2" H 10850 5900 50  0000 L CNN
-F 1 "Screw_Terminal_01x14" V 11000 4700 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-10-2.54_1x10_P2.54mm_Horizontal" H 10900 5150 50  0001 C CNN
-F 3 "~" H 10900 5150 50  0001 C CNN
-	1    10900 5150
+P 10900 5350
+F 0 "J2" H 10850 5850 50  0000 L CNN
+F 1 "Screw_Terminal_01x10" V 11000 4900 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-10-2.54_1x10_P2.54mm_Horizontal" H 10900 5350 50  0001 C CNN
+F 3 "~" H 10900 5350 50  0001 C CNN
+	1    10900 5350
 	1    0    0    -1  
 $EndComp
 Text Notes 500  650  0    100  ~ 20
@@ -177,12 +177,12 @@ Wire Wire Line
 $Comp
 L power:+12V #PWR016
 U 1 1 60948803
-P 10600 4450
-F 0 "#PWR016" H 10600 4300 50  0001 C CNN
-F 1 "+12V" H 10615 4623 50  0000 C CNN
-F 2 "" H 10600 4450 50  0001 C CNN
-F 3 "" H 10600 4450 50  0001 C CNN
-	1    10600 4450
+P 10600 4850
+F 0 "#PWR016" H 10600 4700 50  0001 C CNN
+F 1 "+12V" H 10615 5023 50  0000 C CNN
+F 2 "" H 10600 4850 50  0001 C CNN
+F 3 "" H 10600 4850 50  0001 C CNN
+	1    10600 4850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -201,17 +201,17 @@ Wire Wire Line
 Wire Wire Line
 	10600 5850 10700 5850
 Wire Wire Line
-	10700 4550 10600 4550
+	10700 4950 10600 4950
 Wire Wire Line
-	10600 4550 10600 4450
+	10600 4950 10600 4850
 Text Notes 500  800  0    50   ~ 0
 2. Se över vilka resistorvärden som behövs på 12-3.3V delarna
 Text Notes 500  900  0    50   ~ 0
 3. Se över ordning och antal i terminalblocket.
-Text Label 10700 5750 2    50   ~ 0
+Text Label 10550 5750 2    50   ~ 0
 Deadmans_12V
 Wire Wire Line
-	10700 5750 10100 5750
+	10700 5750 10600 5750
 Text Notes 500  1000 0    50   ~ 0
 4. Se över Deadman_Signal kontra Deadmans_Button
 Wire Notes Line
@@ -601,77 +601,77 @@ Text Notes 500  1200 0    50   ~ 0
 $Comp
 L Device:R_Small R9
 U 1 1 60B3CEF3
-P 9400 5950
-F 0 "R9" H 9459 5996 50  0000 L CNN
-F 1 "10k" H 9459 5905 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 9400 5950 50  0001 C CNN
-F 3 "~" H 9400 5950 50  0001 C CNN
-	1    9400 5950
+P 9300 5950
+F 0 "R9" H 9359 5996 50  0000 L CNN
+F 1 "10k" H 9359 5905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 9300 5950 50  0001 C CNN
+F 3 "~" H 9300 5950 50  0001 C CNN
+	1    9300 5950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R8
 U 1 1 60B3CEF9
-P 9400 5750
-F 0 "R8" H 9459 5796 50  0000 L CNN
-F 1 "4k2" H 9459 5705 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 9400 5750 50  0001 C CNN
-F 3 "~" H 9400 5750 50  0001 C CNN
-	1    9400 5750
+P 9300 5750
+F 0 "R8" H 9359 5796 50  0000 L CNN
+F 1 "4k2" H 9359 5705 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 9300 5750 50  0001 C CNN
+F 3 "~" H 9300 5750 50  0001 C CNN
+	1    9300 5750
 	1    0    0    -1  
 $EndComp
-Text Label 10700 5650 2    50   ~ 0
+Text Label 10550 5650 2    50   ~ 0
 Tach_12V
 Wire Wire Line
-	10700 5650 9400 5650
+	10700 5650 10600 5650
 $Comp
 L power:GND #PWR012
 U 1 1 60B3CF01
-P 9400 6050
-F 0 "#PWR012" H 9400 5800 50  0001 C CNN
-F 1 "GND" H 9405 5877 50  0000 C CNN
-F 2 "" H 9400 6050 50  0001 C CNN
-F 3 "" H 9400 6050 50  0001 C CNN
-	1    9400 6050
+P 9300 6050
+F 0 "#PWR012" H 9300 5800 50  0001 C CNN
+F 1 "GND" H 9305 5877 50  0000 C CNN
+F 2 "" H 9300 6050 50  0001 C CNN
+F 3 "" H 9300 6050 50  0001 C CNN
+	1    9300 6050
 	1    0    0    -1  
 $EndComp
-Text Label 8900 5850 0    50   ~ 0
+Text Label 8800 5850 0    50   ~ 0
 Tachometer
-Connection ~ 9400 5850
-Connection ~ 10100 5950
-Text Label 9650 5950 0    50   ~ 0
+Connection ~ 9300 5850
+Connection ~ 10000 5950
+Text Label 9550 5950 0    50   ~ 0
 Deadmans
 $Comp
 L power:GND #PWR015
 U 1 1 6094B138
-P 10100 6150
-F 0 "#PWR015" H 10100 5900 50  0001 C CNN
-F 1 "GND" H 10105 5977 50  0000 C CNN
-F 2 "" H 10100 6150 50  0001 C CNN
-F 3 "" H 10100 6150 50  0001 C CNN
-	1    10100 6150
+P 10000 6150
+F 0 "#PWR015" H 10000 5900 50  0001 C CNN
+F 1 "GND" H 10005 5977 50  0000 C CNN
+F 2 "" H 10000 6150 50  0001 C CNN
+F 3 "" H 10000 6150 50  0001 C CNN
+	1    10000 6150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R10
 U 1 1 60949FD4
-P 10100 5850
-F 0 "R10" H 10159 5896 50  0000 L CNN
-F 1 "4k2" H 10159 5805 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 10100 5850 50  0001 C CNN
-F 3 "~" H 10100 5850 50  0001 C CNN
-	1    10100 5850
+P 10000 5850
+F 0 "R10" H 10059 5896 50  0000 L CNN
+F 1 "4k2" H 10059 5805 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 10000 5850 50  0001 C CNN
+F 3 "~" H 10000 5850 50  0001 C CNN
+	1    10000 5850
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R11
 U 1 1 60949B67
-P 10100 6050
-F 0 "R11" H 10159 6096 50  0000 L CNN
-F 1 "10k" H 10159 6005 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 10100 6050 50  0001 C CNN
-F 3 "~" H 10100 6050 50  0001 C CNN
-	1    10100 6050
+P 10000 6050
+F 0 "R11" H 10059 6096 50  0000 L CNN
+F 1 "10k" H 10059 6005 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 10000 6050 50  0001 C CNN
+F 3 "~" H 10000 6050 50  0001 C CNN
+	1    10000 6050
 	1    0    0    -1  
 $EndComp
 Text Notes 8900 650  0    50   ~ 0
@@ -723,30 +723,234 @@ Mounting Hole Grounding
 Wire Notes Line
 	11100 6400 11100 4150
 Wire Notes Line
-	11100 4150 8850 4150
+	11100 4150 8700 4150
 Wire Notes Line
-	8850 4150 8850 6400
+	8700 4150 8700 6400
 Wire Notes Line
-	8850 6400 11100 6400
-Text Notes 8900 4250 0    50   ~ 0
+	8700 6400 11100 6400
+Text Notes 8750 4250 0    50   ~ 0
 Screw Terminal
 Text Label 6800 3550 0    50   ~ 0
 Deadmans
 Text Label 6800 3650 0    50   ~ 0
 Tachometer
 Wire Wire Line
-	8900 5850 9400 5850
+	8800 5850 9300 5850
 Wire Wire Line
-	9650 5950 10100 5950
+	9550 5950 10000 5950
 $Comp
 L Regulator_Linear:LM1084-5.0 U1
 U 1 1 60B95E0A
 P 5100 1000
 F 0 "U1" H 5100 1242 50  0000 C CNN
 F 1 "LM1084-5.0" H 5100 1151 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5100 1250 50  0001 C CIN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 5100 1250 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/lm1084.pdf" H 5100 1000 50  0001 C CNN
 	1    5100 1000
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:TestPoint_Small TP6
+U 1 1 60AF54FD
+P 10600 5050
+F 0 "TP6" V 10550 5050 50  0000 C CNN
+F 1 "TestPoint_Small" H 10553 5095 50  0001 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10800 5050 50  0001 C CNN
+F 3 "~" H 10800 5050 50  0001 C CNN
+	1    10600 5050
+	0    -1   1    0   
+$EndComp
+$Comp
+L Connector:TestPoint_Small TP7
+U 1 1 60AF5503
+P 10600 5150
+F 0 "TP7" V 10550 5150 50  0000 C CNN
+F 1 "TestPoint_Small" H 10553 5195 50  0001 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10800 5150 50  0001 C CNN
+F 3 "~" H 10800 5150 50  0001 C CNN
+	1    10600 5150
+	0    -1   1    0   
+$EndComp
+$Comp
+L Connector:TestPoint_Small TP8
+U 1 1 60AF6F16
+P 10600 5250
+F 0 "TP8" V 10550 5250 50  0000 C CNN
+F 1 "TestPoint_Small" H 10553 5295 50  0001 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10800 5250 50  0001 C CNN
+F 3 "~" H 10800 5250 50  0001 C CNN
+	1    10600 5250
+	0    -1   1    0   
+$EndComp
+$Comp
+L Connector:TestPoint_Small TP9
+U 1 1 60AF6F1C
+P 10600 5350
+F 0 "TP9" V 10550 5350 50  0000 C CNN
+F 1 "TestPoint_Small" H 10553 5395 50  0001 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10800 5350 50  0001 C CNN
+F 3 "~" H 10800 5350 50  0001 C CNN
+	1    10600 5350
+	0    -1   1    0   
+$EndComp
+$Comp
+L Connector:TestPoint_Small TP10
+U 1 1 60AF8865
+P 10600 5450
+F 0 "TP10" V 10550 5450 50  0000 C CNN
+F 1 "TestPoint_Small" H 10553 5495 50  0001 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10800 5450 50  0001 C CNN
+F 3 "~" H 10800 5450 50  0001 C CNN
+	1    10600 5450
+	0    -1   1    0   
+$EndComp
+$Comp
+L Connector:TestPoint_Small TP11
+U 1 1 60AF886B
+P 10600 5550
+F 0 "TP11" V 10550 5550 50  0000 C CNN
+F 1 "TestPoint_Small" H 10553 5595 50  0001 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10800 5550 50  0001 C CNN
+F 3 "~" H 10800 5550 50  0001 C CNN
+	1    10600 5550
+	0    -1   1    0   
+$EndComp
+$Comp
+L Connector:TestPoint_Small TP12
+U 1 1 60B00AA3
+P 10600 5650
+F 0 "TP12" V 10550 5650 50  0000 C CNN
+F 1 "TestPoint_Small" H 10553 5695 50  0001 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10800 5650 50  0001 C CNN
+F 3 "~" H 10800 5650 50  0001 C CNN
+	1    10600 5650
+	0    -1   1    0   
+$EndComp
+Connection ~ 10600 5650
+Wire Wire Line
+	10600 5650 9300 5650
+$Comp
+L Connector:TestPoint_Small TP13
+U 1 1 60B00D1B
+P 10600 5750
+F 0 "TP13" V 10550 5750 50  0000 C CNN
+F 1 "TestPoint_Small" H 10553 5795 50  0001 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10800 5750 50  0001 C CNN
+F 3 "~" H 10800 5750 50  0001 C CNN
+	1    10600 5750
+	0    -1   1    0   
+$EndComp
+Connection ~ 10600 5750
+Wire Wire Line
+	10600 5750 10000 5750
+$Comp
+L Connector:TestPoint_Small TP14
+U 1 1 60B00E51
+P 10600 5850
+F 0 "TP14" V 10550 5850 50  0000 C CNN
+F 1 "TestPoint_Small" H 10553 5895 50  0001 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10800 5850 50  0001 C CNN
+F 3 "~" H 10800 5850 50  0001 C CNN
+	1    10600 5850
+	0    -1   1    0   
+$EndComp
+Connection ~ 10600 5850
+Wire Wire Line
+	10700 5550 10600 5550
+Wire Wire Line
+	10700 5450 10600 5450
+Wire Wire Line
+	10700 5350 10600 5350
+Wire Wire Line
+	10700 5250 10600 5250
+Wire Wire Line
+	10700 5150 10600 5150
+Wire Wire Line
+	10700 5050 10600 5050
+$Comp
+L Connector:TestPoint_Small TP1
+U 1 1 60B16E44
+P 10600 4950
+F 0 "TP1" V 10550 4950 50  0000 C CNN
+F 1 "TestPoint_Small" H 10553 4995 50  0001 R CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10800 4950 50  0001 C CNN
+F 3 "~" H 10800 4950 50  0001 C CNN
+	1    10600 4950
+	0    -1   1    0   
+$EndComp
+Connection ~ 10600 4950
+Text Notes 500  1300 0    50   ~ 0
+7. Se om Test Points behövs eller om skruvarna fyller samma funktion.
+Text Label 9700 5050 0    50   ~ 0
+I2C1_SDA
+Text Label 9700 5150 0    50   ~ 0
+I2C1_SCL
+Text Label 9900 5550 0    50   ~ 0
+Start_Relay_GND
+Text Label 10300 5250 0    50   ~ 0
+CANH
+Text Label 10300 5350 0    50   ~ 0
+CANL
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60B4D1BC
+P 10200 4700
+F 0 "#PWR?" H 10200 4550 50  0001 C CNN
+F 1 "+3V3" H 10215 4873 50  0000 C CNN
+F 2 "" H 10200 4700 50  0001 C CNN
+F 3 "" H 10200 4700 50  0001 C CNN
+	1    10200 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 60B4D89B
+P 10300 4850
+F 0 "R?" H 10359 4896 50  0000 L CNN
+F 1 "1k" H 10359 4805 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 10300 4850 50  0001 C CNN
+F 3 "~" H 10300 4850 50  0001 C CNN
+	1    10300 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10600 5050 10300 5050
+Wire Wire Line
+	10300 5050 10300 4950
+Connection ~ 10600 5050
+$Comp
+L Device:R_Small R?
+U 1 1 60B53DE1
+P 10100 4850
+F 0 "R?" H 10159 4896 50  0000 L CNN
+F 1 "1k" H 10159 4805 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 10100 4850 50  0001 C CNN
+F 3 "~" H 10100 4850 50  0001 C CNN
+	1    10100 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10600 5150 10100 5150
+Wire Wire Line
+	10100 5150 10100 4950
+Connection ~ 10600 5150
+Wire Wire Line
+	10300 5050 9700 5050
+Connection ~ 10300 5050
+Wire Wire Line
+	9700 5150 10100 5150
+Connection ~ 10100 5150
+Wire Wire Line
+	10100 4750 10200 4750
+Wire Wire Line
+	10200 4750 10200 4700
+Connection ~ 10200 4750
+Wire Wire Line
+	10200 4750 10300 4750
+Wire Wire Line
+	10300 5250 10600 5250
+Connection ~ 10600 5250
+Wire Wire Line
+	10300 5350 10600 5350
+Connection ~ 10600 5350
 $EndSCHEMATC
