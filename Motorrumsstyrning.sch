@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Mechanical:MountingHole_Pad H1
+L Motorrumsstyrning-rescue:MountingHole_Pad-Mechanical H1
 U 1 1 6086D7A4
 P 800 7300
 F 0 "H1" H 900 7349 50  0000 L CNN
@@ -25,7 +25,7 @@ F 3 "~" H 800 7300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR01
+L Motorrumsstyrning-rescue:GND-power #PWR01
 U 1 1 6086FEB9
 P 1250 7500
 F 0 "#PWR01" H 1250 7250 50  0001 C CNN
@@ -53,7 +53,7 @@ Wire Wire Line
 	1700 7500 1700 7400
 Connection ~ 1400 7500
 $Comp
-L Mechanical:MountingHole_Pad H2
+L Motorrumsstyrning-rescue:MountingHole_Pad-Mechanical H2
 U 1 1 608703CC
 P 1100 7300
 F 0 "H2" H 1200 7349 50  0000 L CNN
@@ -64,7 +64,7 @@ F 3 "~" H 1100 7300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H3
+L Motorrumsstyrning-rescue:MountingHole_Pad-Mechanical H3
 U 1 1 608707B6
 P 1400 7300
 F 0 "H3" H 1500 7349 50  0000 L CNN
@@ -75,7 +75,7 @@ F 3 "~" H 1400 7300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H4
+L Motorrumsstyrning-rescue:MountingHole_Pad-Mechanical H4
 U 1 1 60870B54
 P 1700 7300
 F 0 "H4" H 1800 7349 50  0000 L CNN
@@ -86,7 +86,7 @@ F 3 "~" H 1700 7300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x10 J2
+L Motorrumsstyrning-rescue:Screw_Terminal_01x10-Connector J2
 U 1 1 608EAA7B
 P 10900 5350
 F 0 "J2" H 10850 5850 50  0000 L CNN
@@ -101,7 +101,7 @@ Anteckningar
 Wire Notes Line
 	500  700  3050 700 
 $Comp
-L power:+12V #PWR05
+L Motorrumsstyrning-rescue:+12V-power #PWR05
 U 1 1 60943852
 P 4650 900
 F 0 "#PWR05" H 4650 750 50  0001 C CNN
@@ -112,7 +112,7 @@ F 3 "" H 4650 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C_Small C1
+L Motorrumsstyrning-rescue:C_Small-Device C1
 U 1 1 60943ADC
 P 4650 1100
 F 0 "C1" H 4558 1054 50  0000 R CNN
@@ -128,7 +128,7 @@ Wire Wire Line
 	4650 1000 4800 1000
 Connection ~ 4650 1000
 $Comp
-L Device:C_Small C2
+L Motorrumsstyrning-rescue:C_Small-Device C2
 U 1 1 60944262
 P 5550 1100
 F 0 "C2" H 5458 1054 50  0000 R CNN
@@ -139,7 +139,7 @@ F 3 "~" H 5550 1100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+5V #PWR07
+L Motorrumsstyrning-rescue:+5V-power #PWR07
 U 1 1 60944958
 P 5550 900
 F 0 "#PWR07" H 5550 750 50  0001 C CNN
@@ -155,7 +155,7 @@ Wire Wire Line
 	5550 1000 5400 1000
 Connection ~ 5550 1000
 $Comp
-L power:GND #PWR06
+L Motorrumsstyrning-rescue:GND-power #PWR06
 U 1 1 60945960
 P 5100 1300
 F 0 "#PWR06" H 5100 1050 50  0001 C CNN
@@ -175,7 +175,7 @@ Wire Wire Line
 Wire Wire Line
 	4650 1300 4650 1200
 $Comp
-L power:+12V #PWR016
+L Motorrumsstyrning-rescue:+12V-power #PWR016
 U 1 1 60948803
 P 10600 4850
 F 0 "#PWR016" H 10600 4700 50  0001 C CNN
@@ -186,7 +186,7 @@ F 3 "" H 10600 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR017
+L Motorrumsstyrning-rescue:GND-power #PWR017
 U 1 1 60948BBE
 P 10600 5950
 F 0 "#PWR017" H 10600 5700 50  0001 C CNN
@@ -244,7 +244,7 @@ F 7 "ST Microelectronics" H 7550 4550 50  0001 L BNN "MANUFACTURER"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R12
+L Motorrumsstyrning-rescue:R_Small-Device R12
 U 1 1 60AB2350
 P 10500 1500
 F 0 "R12" H 10559 1546 50  0000 L CNN
@@ -255,9 +255,9 @@ F 3 "~" H 10500 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10500 1600 10450 1600
+	10500 1600 10400 1600
 Wire Wire Line
-	10500 1400 10450 1400
+	10500 1400 10400 1400
 Text Label 11000 1400 2    50   ~ 0
 CANH
 Text Label 11000 1600 2    50   ~ 0
@@ -281,7 +281,7 @@ F 10 "2041021-3" H 1300 5950 50  0001 C CNN "RS Part Number"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR04
+L Motorrumsstyrning-rescue:+3V3-power #PWR04
 U 1 1 60ACEE8D
 P 1950 4600
 F 0 "#PWR04" H 1950 4450 50  0001 C CNN
@@ -292,7 +292,7 @@ F 3 "" H 1950 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR02
+L Motorrumsstyrning-rescue:GND-power #PWR02
 U 1 1 60AD04CE
 P 1300 6600
 F 0 "#PWR02" H 1300 6350 50  0001 C CNN
@@ -314,7 +314,7 @@ Connection ~ 1350 6600
 Wire Wire Line
 	1350 6600 1450 6600
 $Comp
-L power:GND #PWR03
+L Motorrumsstyrning-rescue:GND-power #PWR03
 U 1 1 60AD12A6
 P 1900 6150
 F 0 "#PWR03" H 1900 5900 50  0001 C CNN
@@ -334,7 +334,7 @@ Wire Wire Line
 	1900 5550 1900 5850
 Connection ~ 1900 5850
 $Comp
-L Device:R_Small R3
+L Motorrumsstyrning-rescue:R_Small-Device R3
 U 1 1 60AD3459
 P 2550 4700
 F 0 "R3" H 2609 4746 50  0000 L CNN
@@ -345,7 +345,7 @@ F 3 "~" H 2550 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R4
+L Motorrumsstyrning-rescue:R_Small-Device R4
 U 1 1 60AD411E
 P 2800 4700
 F 0 "R4" H 2859 4746 50  0000 L CNN
@@ -356,7 +356,7 @@ F 3 "~" H 2800 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R5
+L Motorrumsstyrning-rescue:R_Small-Device R5
 U 1 1 60AD43B2
 P 3050 4700
 F 0 "R5" H 3109 4746 50  0000 L CNN
@@ -367,7 +367,7 @@ F 3 "~" H 3050 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R6
+L Motorrumsstyrning-rescue:R_Small-Device R6
 U 1 1 60AD4597
 P 3300 4700
 F 0 "R6" H 3359 4746 50  0000 L CNN
@@ -378,7 +378,7 @@ F 3 "~" H 3300 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R7
+L Motorrumsstyrning-rescue:R_Small-Device R7
 U 1 1 60AD476B
 P 3550 4700
 F 0 "R7" H 3609 4746 50  0000 L CNN
@@ -391,7 +391,7 @@ $EndComp
 Text Notes 500  1550 0    50   ~ 0
 SD-kort drivers: https://github.com/kiwih/cubemx-mmc-sd-card
 $Comp
-L Device:R_Small R2
+L Motorrumsstyrning-rescue:R_Small-Device R2
 U 1 1 60ADC5C7
 P 2300 4700
 F 0 "R2" H 2359 4746 50  0000 L CNN
@@ -402,7 +402,7 @@ F 3 "~" H 2300 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R1
+L Motorrumsstyrning-rescue:R_Small-Device R1
 U 1 1 60ADC8F8
 P 2050 4700
 F 0 "R1" H 2109 4746 50  0000 L CNN
@@ -472,25 +472,7 @@ CAN_RX
 Text Label 6800 4750 0    50   ~ 0
 CAN_TX
 $Comp
-L Vera-MRS-21:MCP2562-E_P IC1
-U 1 1 60AFF4DA
-P 9900 1400
-F 0 "IC1" H 9600 1700 50  0000 C CNN
-F 1 "MCP2562-E_P" H 10250 1700 50  0000 C CNN
-F 2 "Vera-MRS-21:DIP781W56P254L950H533Q8N" H 10850 1650 50  0001 L CNN
-F 3 "http://uk.rs-online.com/web/p/products/7990225P" H 10850 1550 50  0001 L CNN
-F 4 "CAN Transceiver 1Mbps 5V 125degC PDIP8 Microchip MCP2562-E/P, CAN Transceiver 1-channel IEC 61000-4-2, 8-Pin PDIP" H 10850 1450 50  0001 L CNN "Description"
-F 5 "5.334" H 10850 1350 50  0001 L CNN "Height"
-F 6 "7990225P" H 10850 1250 50  0001 L CNN "RS Part Number"
-F 7 "http://uk.rs-online.com/web/p/products/7990225P" H 10850 1150 50  0001 L CNN "RS Price/Stock"
-F 8 "Microchip" H 10850 1050 50  0001 L CNN "Manufacturer_Name"
-F 9 "MCP2562-E/P" H 10850 950 50  0001 L CNN "Manufacturer_Part_Number"
-F 10 "70415106" H 10850 850 50  0001 L CNN "Allied_Number"
-	1    9900 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR014
+L Motorrumsstyrning-rescue:GND-power #PWR014
 U 1 1 60B01262
 P 9900 1900
 F 0 "#PWR014" H 9900 1650 50  0001 C CNN
@@ -501,25 +483,14 @@ F 3 "" H 9900 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR013
+L Motorrumsstyrning-rescue:+5V-power #PWR013
 U 1 1 60B01412
-P 9900 950
-F 0 "#PWR013" H 9900 800 50  0001 C CNN
-F 1 "+5V" H 9915 1123 50  0000 C CNN
-F 2 "" H 9900 950 50  0001 C CNN
-F 3 "" H 9900 950 50  0001 C CNN
-	1    9900 950 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR011
-U 1 1 60B01845
-P 9350 1250
-F 0 "#PWR011" H 9350 1100 50  0001 C CNN
-F 1 "+3V3" H 9365 1423 50  0000 C CNN
-F 2 "" H 9350 1250 50  0001 C CNN
-F 3 "" H 9350 1250 50  0001 C CNN
-	1    9350 1250
+P 9800 950
+F 0 "#PWR013" H 9800 800 50  0001 C CNN
+F 1 "+5V" H 9815 1123 50  0000 C CNN
+F 2 "" H 9800 950 50  0001 C CNN
+F 3 "" H 9800 950 50  0001 C CNN
+	1    9800 950 
 	1    0    0    -1  
 $EndComp
 Text Label 6800 4450 0    50   ~ 0
@@ -564,7 +535,7 @@ Wire Wire Line
 Wire Wire Line
 	2050 5000 4300 5000
 $Comp
-L power:+12V #PWR08
+L Motorrumsstyrning-rescue:+12V-power #PWR08
 U 1 1 60B32D8B
 P 6000 2950
 F 0 "#PWR08" H 6000 2800 50  0001 C CNN
@@ -575,7 +546,7 @@ F 3 "" H 6000 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR09
+L Motorrumsstyrning-rescue:+5V-power #PWR09
 U 1 1 60B331EC
 P 6200 2950
 F 0 "#PWR09" H 6200 2800 50  0001 C CNN
@@ -586,7 +557,7 @@ F 3 "" H 6200 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR010
+L Motorrumsstyrning-rescue:+3V3-power #PWR010
 U 1 1 60B33683
 P 6400 2950
 F 0 "#PWR010" H 6400 2800 50  0001 C CNN
@@ -599,7 +570,7 @@ $EndComp
 Text Notes 500  1200 0    50   ~ 0
 6. Filtrera och begränsa +12V om VIN är kopplad till den.
 $Comp
-L Device:R_Small R9
+L Motorrumsstyrning-rescue:R_Small-Device R9
 U 1 1 60B3CEF3
 P 9300 5950
 F 0 "R9" H 9359 5996 50  0000 L CNN
@@ -610,7 +581,7 @@ F 3 "~" H 9300 5950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R8
+L Motorrumsstyrning-rescue:R_Small-Device R8
 U 1 1 60B3CEF9
 P 9300 5750
 F 0 "R8" H 9359 5796 50  0000 L CNN
@@ -625,7 +596,7 @@ Tach_12V
 Wire Wire Line
 	10700 5650 10600 5650
 $Comp
-L power:GND #PWR012
+L Motorrumsstyrning-rescue:GND-power #PWR012
 U 1 1 60B3CF01
 P 9300 6050
 F 0 "#PWR012" H 9300 5800 50  0001 C CNN
@@ -642,7 +613,7 @@ Connection ~ 10000 5950
 Text Label 9550 5950 0    50   ~ 0
 Deadmans
 $Comp
-L power:GND #PWR015
+L Motorrumsstyrning-rescue:GND-power #PWR015
 U 1 1 6094B138
 P 10000 6150
 F 0 "#PWR015" H 10000 5900 50  0001 C CNN
@@ -653,7 +624,7 @@ F 3 "" H 10000 6150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R10
+L Motorrumsstyrning-rescue:R_Small-Device R10
 U 1 1 60949FD4
 P 10000 5850
 F 0 "R10" H 10059 5896 50  0000 L CNN
@@ -664,7 +635,7 @@ F 3 "~" H 10000 5850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R11
+L Motorrumsstyrning-rescue:R_Small-Device R11
 U 1 1 60949B67
 P 10000 6050
 F 0 "R11" H 10059 6096 50  0000 L CNN
@@ -679,11 +650,11 @@ CAN Transceiver
 Text Label 9000 1400 0    50   ~ 0
 CAN_RX
 Wire Wire Line
-	9000 1400 9350 1400
-Text Label 9000 1600 0    50   ~ 0
+	9000 1400 9400 1400
+Text Label 9000 1300 0    50   ~ 0
 CAN_TX
 Wire Wire Line
-	9000 1600 9350 1600
+	9000 1300 9400 1300
 Wire Wire Line
 	10500 1600 11000 1600
 Connection ~ 10500 1600
@@ -739,7 +710,7 @@ Wire Wire Line
 Wire Wire Line
 	9550 5950 10000 5950
 $Comp
-L Regulator_Linear:LM1084-5.0 U1
+L Motorrumsstyrning-rescue:LM1084-5.0-Regulator_Linear U1
 U 1 1 60B95E0A
 P 5100 1000
 F 0 "U1" H 5100 1242 50  0000 C CNN
@@ -750,7 +721,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm1084.pdf" H 5100 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:TestPoint_Small TP6
+L Motorrumsstyrning-rescue:TestPoint_Small-Connector TP6
 U 1 1 60AF54FD
 P 10600 5050
 F 0 "TP6" V 10550 5050 50  0000 C CNN
@@ -761,7 +732,7 @@ F 3 "~" H 10800 5050 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Connector:TestPoint_Small TP7
+L Motorrumsstyrning-rescue:TestPoint_Small-Connector TP7
 U 1 1 60AF5503
 P 10600 5150
 F 0 "TP7" V 10550 5150 50  0000 C CNN
@@ -772,7 +743,7 @@ F 3 "~" H 10800 5150 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Connector:TestPoint_Small TP8
+L Motorrumsstyrning-rescue:TestPoint_Small-Connector TP8
 U 1 1 60AF6F16
 P 10600 5250
 F 0 "TP8" V 10550 5250 50  0000 C CNN
@@ -783,7 +754,7 @@ F 3 "~" H 10800 5250 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Connector:TestPoint_Small TP9
+L Motorrumsstyrning-rescue:TestPoint_Small-Connector TP9
 U 1 1 60AF6F1C
 P 10600 5350
 F 0 "TP9" V 10550 5350 50  0000 C CNN
@@ -794,7 +765,7 @@ F 3 "~" H 10800 5350 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Connector:TestPoint_Small TP10
+L Motorrumsstyrning-rescue:TestPoint_Small-Connector TP10
 U 1 1 60AF8865
 P 10600 5450
 F 0 "TP10" V 10550 5450 50  0000 C CNN
@@ -805,7 +776,7 @@ F 3 "~" H 10800 5450 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Connector:TestPoint_Small TP11
+L Motorrumsstyrning-rescue:TestPoint_Small-Connector TP11
 U 1 1 60AF886B
 P 10600 5550
 F 0 "TP11" V 10550 5550 50  0000 C CNN
@@ -816,7 +787,7 @@ F 3 "~" H 10800 5550 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Connector:TestPoint_Small TP12
+L Motorrumsstyrning-rescue:TestPoint_Small-Connector TP12
 U 1 1 60B00AA3
 P 10600 5650
 F 0 "TP12" V 10550 5650 50  0000 C CNN
@@ -830,7 +801,7 @@ Connection ~ 10600 5650
 Wire Wire Line
 	10600 5650 9300 5650
 $Comp
-L Connector:TestPoint_Small TP13
+L Motorrumsstyrning-rescue:TestPoint_Small-Connector TP13
 U 1 1 60B00D1B
 P 10600 5750
 F 0 "TP13" V 10550 5750 50  0000 C CNN
@@ -844,7 +815,7 @@ Connection ~ 10600 5750
 Wire Wire Line
 	10600 5750 10000 5750
 $Comp
-L Connector:TestPoint_Small TP14
+L Motorrumsstyrning-rescue:TestPoint_Small-Connector TP14
 U 1 1 60B00E51
 P 10600 5850
 F 0 "TP14" V 10550 5850 50  0000 C CNN
@@ -868,7 +839,7 @@ Wire Wire Line
 Wire Wire Line
 	10700 5050 10600 5050
 $Comp
-L Connector:TestPoint_Small TP1
+L Motorrumsstyrning-rescue:TestPoint_Small-Connector TP1
 U 1 1 60B16E44
 P 10600 4950
 F 0 "TP1" V 10550 4950 50  0000 C CNN
@@ -892,7 +863,7 @@ CANH
 Text Label 10300 5050 0    50   ~ 0
 CANL
 $Comp
-L power:+3V3 #PWR0101
+L Motorrumsstyrning-rescue:+3V3-power #PWR0101
 U 1 1 60B4D1BC
 P 9950 4900
 F 0 "#PWR0101" H 9950 4750 50  0001 C CNN
@@ -903,7 +874,7 @@ F 3 "" H 9950 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small R14
+L Motorrumsstyrning-rescue:R_Small-Device R14
 U 1 1 60B4D89B
 P 10000 5050
 F 0 "R14" H 10059 5096 50  0000 L CNN
@@ -916,7 +887,7 @@ $EndComp
 Wire Wire Line
 	10000 5250 10000 5150
 $Comp
-L Device:R_Small R13
+L Motorrumsstyrning-rescue:R_Small-Device R13
 U 1 1 60B53DE1
 P 9900 5050
 F 0 "R13" H 9959 5096 50  0000 L CNN
@@ -958,4 +929,126 @@ Wire Wire Line
 	9450 5350 9900 5350
 Wire Wire Line
 	9450 5250 10000 5250
+$Comp
+L Interface_CAN_LIN:MCP2551-I-P U?
+U 1 1 60C52B5A
+P 9900 1500
+F 0 "U?" H 10150 2100 50  0000 C CNN
+F 1 "MCP2551-I-P" H 10200 2000 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 9900 1000 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/devicedoc/21667d.pdf" H 9900 1500 50  0001 C CNN
+	1    9900 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 950  9800 1100
+Wire Wire Line
+	9800 1100 9900 1100
+$Comp
+L Device:R_Small R?
+U 1 1 60C78D4C
+P 9400 1800
+F 0 "R?" H 9341 1754 50  0000 R CNN
+F 1 "R_Small" H 9341 1845 50  0000 R CNN
+F 2 "" H 9400 1800 50  0001 C CNN
+F 3 "~" H 9400 1800 50  0001 C CNN
+	1    9400 1800
+	1    0    0    1   
+$EndComp
+$Comp
+L Motorrumsstyrning-rescue:GND-power #PWR?
+U 1 1 60C791A1
+P 9400 1900
+F 0 "#PWR?" H 9400 1650 50  0001 C CNN
+F 1 "GND" H 9405 1727 50  0000 C CNN
+F 2 "" H 9400 1900 50  0001 C CNN
+F 3 "" H 9400 1900 50  0001 C CNN
+	1    9400 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Motorrumsstyrning-rescue:Screw_Terminal_01x10-Connector J?
+U 1 1 60C79806
+P 10900 3450
+F 0 "J?" H 10850 3950 50  0000 L CNN
+F 1 "Screw_Terminal_01x10" V 11000 3000 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-10-2.54_1x10_P2.54mm_Horizontal" H 10900 3450 50  0001 C CNN
+F 3 "~" H 10900 3450 50  0001 C CNN
+	1    10900 3450
+	1    0    0    -1  
+$EndComp
+Text Label 10550 3800 2    50   ~ 0
+Injector_IN
+Text Label 10550 3900 2    50   ~ 0
+Injector_OUT
+Text Label 6800 3750 0    50   ~ 0
+Start_Enable
+$Comp
+L Transistor_BJT:BC337 Q?
+U 1 1 60C819FD
+P 8250 1000
+F 0 "Q?" H 8441 1046 50  0000 L CNN
+F 1 "BC337" H 8441 955 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 8450 925 50  0001 L CIN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bc337.pdf" H 8250 1000 50  0001 L CNN
+	1    8250 1000
+	1    0    0    -1  
+$EndComp
+Text Label 8350 800  2    50   ~ 0
+Start_Relay_GND
+$Comp
+L power:GND #PWR?
+U 1 1 60C82964
+P 8350 1200
+F 0 "#PWR?" H 8350 950 50  0001 C CNN
+F 1 "GND" H 8355 1027 50  0000 C CNN
+F 2 "" H 8350 1200 50  0001 C CNN
+F 3 "" H 8350 1200 50  0001 C CNN
+	1    8350 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 60C832BB
+P 7950 1000
+F 0 "R?" V 7754 1000 50  0000 C CNN
+F 1 "1k" V 7845 1000 50  0000 C CNN
+F 2 "" H 7950 1000 50  0001 C CNN
+F 3 "~" H 7950 1000 50  0001 C CNN
+	1    7950 1000
+	0    1    1    0   
+$EndComp
+Text Label 7350 1000 0    50   ~ 0
+Start_Enable
+Wire Wire Line
+	7850 1000 7350 1000
+Text Notes 7150 650  0    50   ~ 0
+Kolla om 1k gäller för 3.3V vid gate
+Text Label 7900 1800 0    50   ~ 0
+Injector_IN
+Text Label 7800 2200 0    50   ~ 0
+Injector_OUT
+$Comp
+L Transistor_BJT:BC337 Q?
+U 1 1 60C8DD08
+P 8200 2000
+F 0 "Q?" H 8391 2046 50  0000 L CNN
+F 1 "BC337" H 8391 1955 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 8400 1925 50  0001 L CIN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bc337.pdf" H 8200 2000 50  0001 L CNN
+	1    8200 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 2200 8300 2200
+Wire Wire Line
+	8300 1800 7900 1800
+Text Label 7400 3850 2    50   ~ 0
+Injector_Enable
+Wire Wire Line
+	7400 3850 6800 3850
+Text Label 6950 2000 0    50   ~ 0
+Injector_Enable
+Wire Wire Line
+	6950 2000 8000 2000
 $EndSCHEMATC

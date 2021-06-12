@@ -881,81 +881,81 @@ $EndComp
 Connection ~ 10600 4950
 Text Notes 500  1300 0    50   ~ 0
 7. Se om Test Points behövs eller om skruvarna fyller samma funktion.
-Text Label 9700 5050 0    50   ~ 0
+Text Label 9450 5250 0    50   ~ 0
 I2C1_SDA
-Text Label 9700 5150 0    50   ~ 0
+Text Label 9450 5350 0    50   ~ 0
 I2C1_SCL
 Text Label 9900 5550 0    50   ~ 0
 Start_Relay_GND
-Text Label 10300 5250 0    50   ~ 0
+Text Label 10300 5150 0    50   ~ 0
 CANH
-Text Label 10300 5350 0    50   ~ 0
+Text Label 10300 5050 0    50   ~ 0
 CANL
 $Comp
 L power:+3V3 #PWR0101
 U 1 1 60B4D1BC
-P 10200 4700
-F 0 "#PWR0101" H 10200 4550 50  0001 C CNN
-F 1 "+3V3" H 10215 4873 50  0000 C CNN
-F 2 "" H 10200 4700 50  0001 C CNN
-F 3 "" H 10200 4700 50  0001 C CNN
-	1    10200 4700
+P 9950 4900
+F 0 "#PWR0101" H 9950 4750 50  0001 C CNN
+F 1 "+3V3" H 9965 5073 50  0000 C CNN
+F 2 "" H 9950 4900 50  0001 C CNN
+F 3 "" H 9950 4900 50  0001 C CNN
+	1    9950 4900
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R14
 U 1 1 60B4D89B
-P 10300 4850
-F 0 "R14" H 10359 4896 50  0000 L CNN
-F 1 "1k" H 10359 4805 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 10300 4850 50  0001 C CNN
-F 3 "~" H 10300 4850 50  0001 C CNN
-	1    10300 4850
+P 10000 5050
+F 0 "R14" H 10059 5096 50  0000 L CNN
+F 1 "1k" H 10059 5005 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 10000 5050 50  0001 C CNN
+F 3 "~" H 10000 5050 50  0001 C CNN
+	1    10000 5050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10600 5050 10300 5050
-Wire Wire Line
-	10300 5050 10300 4950
-Connection ~ 10600 5050
+	10000 5250 10000 5150
 $Comp
 L Device:R_Small R13
 U 1 1 60B53DE1
-P 10100 4850
-F 0 "R13" H 10159 4896 50  0000 L CNN
-F 1 "1k" H 10159 4805 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 10100 4850 50  0001 C CNN
-F 3 "~" H 10100 4850 50  0001 C CNN
-	1    10100 4850
-	1    0    0    -1  
+P 9900 5050
+F 0 "R13" H 9959 5096 50  0000 L CNN
+F 1 "1k" H 9959 5005 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 9900 5050 50  0001 C CNN
+F 3 "~" H 9900 5050 50  0001 C CNN
+	1    9900 5050
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	10600 5150 10100 5150
+	9900 5350 9900 5150
 Wire Wire Line
-	10100 5150 10100 4950
-Connection ~ 10600 5150
+	9900 4950 9950 4950
 Wire Wire Line
-	10300 5050 9700 5050
-Connection ~ 10300 5050
+	10300 5150 10600 5150
 Wire Wire Line
-	9700 5150 10100 5150
-Connection ~ 10100 5150
-Wire Wire Line
-	10100 4750 10200 4750
-Wire Wire Line
-	10200 4750 10200 4700
-Connection ~ 10200 4750
-Wire Wire Line
-	10200 4750 10300 4750
-Wire Wire Line
-	10300 5250 10600 5250
-Connection ~ 10600 5250
-Wire Wire Line
-	10300 5350 10600 5350
-Connection ~ 10600 5350
+	10300 5050 10600 5050
 Wire Wire Line
 	9900 5550 10600 5550
 Connection ~ 10600 5550
 Text Notes 500  1400 0    50   ~ 0
 8. Göra plats för det elektromagnetiska frihjulet
+Connection ~ 10600 5250
+Connection ~ 10600 5350
+Connection ~ 10600 5050
+Connection ~ 10600 5150
+Wire Wire Line
+	9950 4900 9950 4950
+Connection ~ 9950 4950
+Wire Wire Line
+	9950 4950 10000 4950
+Connection ~ 9900 5350
+Wire Wire Line
+	9900 5350 10600 5350
+Connection ~ 10000 5250
+Wire Wire Line
+	10000 5250 10600 5250
+Wire Wire Line
+	9450 5350 9900 5350
+Wire Wire Line
+	9450 5250 10000 5250
 $EndSCHEMATC
