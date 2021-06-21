@@ -1,0 +1,21 @@
+!SESSION 2021-06-21 18:31:41.142 -----------------------------------------------
+eclipse.buildId=Version 1.6.1
+java.version=11.0.9.1
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=sv_SE
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2021-06-21 18:32:12.830
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2021-06-21 18:32:12.874
+!MESSAGE Log4j initialized with config file C:\Users\erikb\Documents\GitHub\Vera-MRS-21\Programmering\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-06-21 18:32:15.095
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2021-06-21 18:32:15.995
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-06-21 18:34:12.016
+!MESSAGE Indexed 'Programmering' (26 sources, 86 headers) in 2.9 sec: 5,985 declarations; 35,817 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0048%)
