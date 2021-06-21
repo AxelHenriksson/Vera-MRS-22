@@ -1,5 +1,6 @@
 EESchema Schematic File Version 4
-EELAYER 30 0
+LIBS:Motorrumsstyrning-cache
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -485,12 +486,12 @@ $EndComp
 $Comp
 L Motorrumsstyrning-rescue:+5V-power #PWR013
 U 1 1 60B01412
-P 9800 950
-F 0 "#PWR013" H 9800 800 50  0001 C CNN
-F 1 "+5V" H 9815 1123 50  0000 C CNN
-F 2 "" H 9800 950 50  0001 C CNN
-F 3 "" H 9800 950 50  0001 C CNN
-	1    9800 950 
+P 9900 1100
+F 0 "#PWR013" H 9900 950 50  0001 C CNN
+F 1 "+5V" H 9915 1273 50  0000 C CNN
+F 2 "" H 9900 1100 50  0001 C CNN
+F 3 "" H 9900 1100 50  0001 C CNN
+	1    9900 1100
 	1    0    0    -1  
 $EndComp
 Text Label 6800 4450 0    50   ~ 0
@@ -933,17 +934,13 @@ $Comp
 L Interface_CAN_LIN:MCP2551-I-P U?
 U 1 1 60C52B5A
 P 9900 1500
-F 0 "U?" H 10150 2100 50  0000 C CNN
-F 1 "MCP2551-I-P" H 10200 2000 50  0000 C CNN
+F 0 "U?" H 10250 1850 50  0000 C CNN
+F 1 "MCP2551-I-P" H 9500 1850 50  0000 C CNN
 F 2 "Package_DIP:DIP-8_W7.62mm" H 9900 1000 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/devicedoc/21667d.pdf" H 9900 1500 50  0001 C CNN
 	1    9900 1500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9800 950  9800 1100
-Wire Wire Line
-	9800 1100 9900 1100
 $Comp
 L Device:R_Small R?
 U 1 1 60C78D4C
@@ -1051,4 +1048,40 @@ Text Label 6950 2000 0    50   ~ 0
 Injector_Enable
 Wire Wire Line
 	6950 2000 8000 2000
+Text Label 5450 3650 0    50   ~ 0
+PB0
+Text Label 5450 3750 0    50   ~ 0
+PB1
+Text Label 5450 3950 0    50   ~ 0
+PB3
+Text Label 5450 4050 0    50   ~ 0
+PB4
+Text Label 5450 4150 0    50   ~ 0
+PB5
+Text Label 5250 4500 0    50   ~ 0
+PF0
+Text Label 5250 4600 0    50   ~ 0
+PF1
+Text Label 6950 3950 2    50   ~ 0
+PA4
+Wire Wire Line
+	6800 3950 6950 3950
+Wire Wire Line
+	5600 3650 5450 3650
+Wire Wire Line
+	5600 3750 5450 3750
+Wire Wire Line
+	5600 3950 5450 3950
+Wire Wire Line
+	5450 4050 5600 4050
+Wire Wire Line
+	5450 4150 5600 4150
+Text Label 6950 4350 2    50   ~ 0
+PA8
+Wire Wire Line
+	6950 4350 6800 4350
+Wire Wire Line
+	5600 4500 5250 4500
+Wire Wire Line
+	5600 4600 5250 4600
 $EndSCHEMATC
