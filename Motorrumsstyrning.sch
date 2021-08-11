@@ -8,8 +8,8 @@ Title "Vera-MRS-21"
 Date ""
 Rev "A"
 Comp "Chalmers Vera Team"
-Comment1 ""
-Comment2 ""
+Comment1 "SB16 and SB18 on F303 must be desoldered to enable SPI for pins PA5 and PA6"
+Comment2 "SPI SD Drivers: github.com/kiwih/cubemx-mmc-sd-card"
 Comment3 ""
 Comment4 ""
 $EndDescr
@@ -25,10 +25,10 @@ F 3 "~" H 5550 7250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Motorrumsstyrning-rescue:GND-power #PWR014
+L Motorrumsstyrning-rescue:GND-power #PWR015
 U 1 1 6086FEB9
 P 6000 7450
-F 0 "#PWR014" H 6000 7200 50  0001 C CNN
+F 0 "#PWR015" H 6000 7200 50  0001 C CNN
 F 1 "GND" H 6005 7277 50  0000 C CNN
 F 2 "" H 6000 7450 50  0001 C CNN
 F 3 "" H 6000 7450 50  0001 C CNN
@@ -86,169 +86,167 @@ F 3 "~" H 6450 7250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Motorrumsstyrning-rescue:Screw_Terminal_01x10-Connector J24
+L Motorrumsstyrning-rescue:Screw_Terminal_01x10-Connector J15
 U 1 1 608EAA7B
-P 6700 5800
-F 0 "J24" H 6650 6300 50  0000 L CNN
-F 1 "Screw_Terminal_01x10" V 6800 5350 50  0000 L CNN
-F 2 "Vera-MRS-21:TerminalBlock_Phoenix_MPT-0,5-10-2.54_1x10_P2.54mm_Horizontal" H 6700 5800 50  0001 C CNN
-F 3 "~" H 6700 5800 50  0001 C CNN
-	1    6700 5800
+P 10950 3000
+F 0 "J15" H 10900 3500 50  0000 L CNN
+F 1 "Screw_Terminal_01x10" V 11050 2550 50  0000 L CNN
+F 2 "Vera-MRS-21:TerminalBlock_Phoenix_MPT-0,5-10-2.54_1x10_P2.54mm_Horizontal" H 10950 3000 50  0001 C CNN
+F 3 "~" H 10950 3000 50  0001 C CNN
+	1    10950 3000
 	1    0    0    -1  
 $EndComp
-Text Notes 7050 4900 0    100  ~ 20
-To Do
 $Comp
 L Motorrumsstyrning-rescue:+12V-power #PWR08
 U 1 1 60943852
-P 4650 900
-F 0 "#PWR08" H 4650 750 50  0001 C CNN
-F 1 "+12V" H 4665 1073 50  0000 C CNN
-F 2 "" H 4650 900 50  0001 C CNN
-F 3 "" H 4650 900 50  0001 C CNN
-	1    4650 900 
+P 950 900
+F 0 "#PWR08" H 950 750 50  0001 C CNN
+F 1 "+12V" H 965 1073 50  0000 C CNN
+F 2 "" H 950 900 50  0001 C CNN
+F 3 "" H 950 900 50  0001 C CNN
+	1    950  900 
 	1    0    0    -1  
 $EndComp
 $Comp
 L Motorrumsstyrning-rescue:C_Small-Device C1
 U 1 1 60943ADC
-P 4650 1100
-F 0 "C1" H 4558 1054 50  0000 R CNN
-F 1 "0.33u" H 4558 1145 50  0000 R CNN
-F 2 "" H 4650 1100 50  0001 C CNN
-F 3 "~" H 4650 1100 50  0001 C CNN
-	1    4650 1100
+P 950 1100
+F 0 "C1" H 858 1054 50  0000 R CNN
+F 1 "0.33u" H 858 1145 50  0000 R CNN
+F 2 "" H 950 1100 50  0001 C CNN
+F 3 "~" H 950 1100 50  0001 C CNN
+	1    950  1100
 	1    0    0    1   
 $EndComp
 Wire Wire Line
-	4650 900  4650 1000
+	950  900  950  1000
 Wire Wire Line
-	4650 1000 4800 1000
-Connection ~ 4650 1000
+	950  1000 1100 1000
+Connection ~ 950  1000
 $Comp
 L Motorrumsstyrning-rescue:C_Small-Device C2
 U 1 1 60944262
-P 5550 1100
-F 0 "C2" H 5458 1054 50  0000 R CNN
-F 1 "0.1u" H 5458 1145 50  0000 R CNN
-F 2 "" H 5550 1100 50  0001 C CNN
-F 3 "~" H 5550 1100 50  0001 C CNN
-	1    5550 1100
+P 1850 1100
+F 0 "C2" H 1758 1054 50  0000 R CNN
+F 1 "0.1u" H 1758 1145 50  0000 R CNN
+F 2 "" H 1850 1100 50  0001 C CNN
+F 3 "~" H 1850 1100 50  0001 C CNN
+	1    1850 1100
 	-1   0    0    1   
 $EndComp
 $Comp
 L Motorrumsstyrning-rescue:+5V-power #PWR012
 U 1 1 60944958
-P 5550 900
-F 0 "#PWR012" H 5550 750 50  0001 C CNN
-F 1 "+5V" H 5565 1073 50  0000 C CNN
-F 2 "" H 5550 900 50  0001 C CNN
-F 3 "" H 5550 900 50  0001 C CNN
-	1    5550 900 
+P 1850 900
+F 0 "#PWR012" H 1850 750 50  0001 C CNN
+F 1 "+5V" H 1865 1073 50  0000 C CNN
+F 2 "" H 1850 900 50  0001 C CNN
+F 3 "" H 1850 900 50  0001 C CNN
+	1    1850 900 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5550 900  5550 1000
+	1850 900  1850 1000
 Wire Wire Line
-	5550 1000 5400 1000
-Connection ~ 5550 1000
+	1850 1000 1700 1000
+Connection ~ 1850 1000
 $Comp
 L Motorrumsstyrning-rescue:GND-power #PWR09
 U 1 1 60945960
-P 5100 1400
-F 0 "#PWR09" H 5100 1150 50  0001 C CNN
-F 1 "GND" H 5105 1227 50  0000 C CNN
-F 2 "" H 5100 1400 50  0001 C CNN
-F 3 "" H 5100 1400 50  0001 C CNN
-	1    5100 1400
+P 1400 1400
+F 0 "#PWR09" H 1400 1150 50  0001 C CNN
+F 1 "GND" H 1405 1227 50  0000 C CNN
+F 2 "" H 1400 1400 50  0001 C CNN
+F 3 "" H 1400 1400 50  0001 C CNN
+	1    1400 1400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5100 1300 5550 1300
+	1400 1300 1850 1300
 Wire Wire Line
-	5550 1300 5550 1200
-Connection ~ 5100 1300
+	1850 1300 1850 1200
+Connection ~ 1400 1300
 Wire Wire Line
-	5100 1300 4650 1300
+	1400 1300 950  1300
 Wire Wire Line
-	4650 1300 4650 1200
+	950  1300 950  1200
 $Comp
-L Motorrumsstyrning-rescue:+12V-power #PWR015
+L Motorrumsstyrning-rescue:+12V-power #PWR017
 U 1 1 60948803
-P 6400 5300
-F 0 "#PWR015" H 6400 5150 50  0001 C CNN
-F 1 "+12V" H 6415 5473 50  0000 C CNN
-F 2 "" H 6400 5300 50  0001 C CNN
-F 3 "" H 6400 5300 50  0001 C CNN
-	1    6400 5300
+P 10650 2500
+F 0 "#PWR017" H 10650 2350 50  0001 C CNN
+F 1 "+12V" H 10665 2673 50  0000 C CNN
+F 2 "" H 10650 2500 50  0001 C CNN
+F 3 "" H 10650 2500 50  0001 C CNN
+	1    10650 2500
 	1    0    0    -1  
 $EndComp
 $Comp
-L Motorrumsstyrning-rescue:GND-power #PWR016
+L Motorrumsstyrning-rescue:GND-power #PWR018
 U 1 1 60948BBE
-P 6400 6400
-F 0 "#PWR016" H 6400 6150 50  0001 C CNN
-F 1 "GND" H 6405 6227 50  0000 C CNN
-F 2 "" H 6400 6400 50  0001 C CNN
-F 3 "" H 6400 6400 50  0001 C CNN
-	1    6400 6400
+P 10650 3600
+F 0 "#PWR018" H 10650 3350 50  0001 C CNN
+F 1 "GND" H 10655 3427 50  0000 C CNN
+F 2 "" H 10650 3600 50  0001 C CNN
+F 3 "" H 10650 3600 50  0001 C CNN
+	1    10650 3600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6400 6400 6400 6300
+	10650 3600 10650 3500
 Wire Wire Line
-	6400 6300 6500 6300
+	10650 3500 10750 3500
 Wire Wire Line
-	6500 5400 6400 5400
+	10750 2600 10650 2600
 Wire Wire Line
-	6400 5400 6400 5300
-Text Label 6400 6200 2    50   ~ 0
+	10650 2600 10650 2500
+Text Label 10650 3400 2    50   ~ 0
 Deadmans_12V
 Wire Notes Line
-	4250 550  5950 550 
+	550  550  2250 550 
 Wire Notes Line
-	5950 550  5950 1650
+	2250 550  2250 1650
 Wire Notes Line
-	5950 1650 4250 1650
+	2250 1650 550  1650
 Wire Notes Line
-	4250 1650 4250 550 
-Text Notes 4300 650  0    50   ~ 0
+	550  1650 550  550 
+Text Notes 600  650  0    50   ~ 0
 12V to 5V linear regulator
 Wire Wire Line
 	5550 7350 5550 7450
 $Comp
 L Vera-MRS-21:NUCLEO-F303K8 U1
 U 1 1 60AB0012
-P 2600 3400
-F 0 "U1" H 2200 4150 50  0000 C CNN
-F 1 "NUCLEO-F303K8" H 3200 4150 50  0000 C CNN
-F 2 "Vera-MRS-21:NUCLEO_32" H 3950 4500 50  0001 L BNN
-F 3 "" H 2600 3400 50  0001 L BNN
-F 4 "N/A" H 3950 4300 50  0001 L BNN "PARTREV"
-F 5 "N/A" H 3950 4200 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
-F 6 "Manufacturer Recommendations" H 3950 4400 50  0001 L BNN "STANDARD"
-F 7 "ST Microelectronics" H 3950 4100 50  0001 L BNN "MANUFACTURER"
-	1    2600 3400
+P 7200 3600
+F 0 "U1" H 6800 4350 50  0000 C CNN
+F 1 "NUCLEO-F303K8" H 7800 4350 50  0000 C CNN
+F 2 "Vera-MRS-21:NUCLEO_32" H 8550 4700 50  0001 L BNN
+F 3 "" H 7200 3600 50  0001 L BNN
+F 4 "N/A" H 8550 4500 50  0001 L BNN "PARTREV"
+F 5 "N/A" H 8550 4400 50  0001 L BNN "MAXIMUM_PACKAGE_HEIGHT"
+F 6 "Manufacturer Recommendations" H 8550 4600 50  0001 L BNN "STANDARD"
+F 7 "ST Microelectronics" H 8550 4300 50  0001 L BNN "MANUFACTURER"
+	1    7200 3600
 	1    0    0    -1  
 $EndComp
 $Comp
 L Motorrumsstyrning-rescue:R_Small-Device R16
 U 1 1 60AB2350
-P 10500 1500
-F 0 "R16" H 10559 1546 50  0000 L CNN
-F 1 "120R" H 10559 1455 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 10500 1500 50  0001 C CNN
-F 3 "~" H 10500 1500 50  0001 C CNN
-	1    10500 1500
+P 8000 1500
+F 0 "R16" H 8059 1546 50  0000 L CNN
+F 1 "120R" H 8059 1455 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 8000 1500 50  0001 C CNN
+F 3 "~" H 8000 1500 50  0001 C CNN
+	1    8000 1500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10500 1600 10400 1600
+	8000 1600 7900 1600
 Wire Wire Line
-	10500 1400 10400 1400
-Text Label 11000 1400 2    50   ~ 0
+	8000 1400 7900 1400
+Text Label 8500 1400 2    50   ~ 0
 CANH
-Text Label 11000 1600 2    50   ~ 0
+Text Label 8500 1600 2    50   ~ 0
 CANL
 $Comp
 L Vera-MRS-21:SD_Card_Connector J1
@@ -365,8 +363,6 @@ F 3 "~" H 3300 5500 50  0001 C CNN
 	1    3300 5500
 	1    0    0    -1  
 $EndComp
-Text Notes 7100 6450 0    50   ~ 10
-Prospect SPI SD drivers
 $Comp
 L Motorrumsstyrning-rescue:R_Small-Device R3
 U 1 1 60ADC5C7
@@ -418,11 +414,11 @@ Wire Wire Line
 Wire Wire Line
 	1950 5400 2050 5400
 Connection ~ 1950 5400
-Text Label 3200 3600 0    50   ~ 0
+Text Label 7800 3800 0    50   ~ 0
 SPI1_SCK
-Text Label 3200 3700 0    50   ~ 0
+Text Label 7800 3900 0    50   ~ 0
 SPI1_MISO
-Text Label 3200 3800 0    50   ~ 0
+Text Label 7800 4000 0    50   ~ 0
 SPI1_MOSI
 Text Label 4150 6250 2    50   ~ 0
 SPI1_MOSI
@@ -436,39 +432,39 @@ Text Label 4150 5800 2    50   ~ 0
 ~CD
 Text Label 4150 5900 2    50   ~ 0
 ~WP
-Text Label 3200 4200 0    50   ~ 0
+Text Label 7800 4400 0    50   ~ 0
 CAN_RX
-Text Label 3200 4300 0    50   ~ 0
+Text Label 7800 4500 0    50   ~ 0
 CAN_TX
 $Comp
-L Motorrumsstyrning-rescue:GND-power #PWR021
+L Motorrumsstyrning-rescue:GND-power #PWR022
 U 1 1 60B01262
-P 9900 1900
-F 0 "#PWR021" H 9900 1650 50  0001 C CNN
-F 1 "GND" H 9905 1727 50  0000 C CNN
-F 2 "" H 9900 1900 50  0001 C CNN
-F 3 "" H 9900 1900 50  0001 C CNN
-	1    9900 1900
+P 7400 1900
+F 0 "#PWR022" H 7400 1650 50  0001 C CNN
+F 1 "GND" H 7405 1727 50  0000 C CNN
+F 2 "" H 7400 1900 50  0001 C CNN
+F 3 "" H 7400 1900 50  0001 C CNN
+	1    7400 1900
 	1    0    0    -1  
 $EndComp
 $Comp
-L Motorrumsstyrning-rescue:+5V-power #PWR020
+L Motorrumsstyrning-rescue:+5V-power #PWR021
 U 1 1 60B01412
-P 9900 1100
-F 0 "#PWR020" H 9900 950 50  0001 C CNN
-F 1 "+5V" H 9915 1273 50  0000 C CNN
-F 2 "" H 9900 1100 50  0001 C CNN
-F 3 "" H 9900 1100 50  0001 C CNN
-	1    9900 1100
+P 7400 1100
+F 0 "#PWR021" H 7400 950 50  0001 C CNN
+F 1 "+5V" H 7415 1273 50  0000 C CNN
+F 2 "" H 7400 1100 50  0001 C CNN
+F 3 "" H 7400 1100 50  0001 C CNN
+	1    7400 1100
 	1    0    0    -1  
 $EndComp
-Text Label 3200 4000 0    50   ~ 0
+Text Label 7800 4200 0    50   ~ 0
 USART2_TX
-Text Label 3200 4100 0    50   ~ 0
+Text Label 7800 4300 0    50   ~ 0
 USART2_RX
-Text Label 2000 3800 2    50   ~ 0
+Text Label 6600 4000 2    50   ~ 0
 I2C1_SCL
-Text Label 2000 3900 2    50   ~ 0
+Text Label 6600 4100 2    50   ~ 0
 I2C1_SDA
 Connection ~ 2050 5400
 Wire Wire Line
@@ -498,134 +494,134 @@ Wire Wire Line
 $Comp
 L Motorrumsstyrning-rescue:+12V-power #PWR04
 U 1 1 60B32D8B
-P 2400 2450
-F 0 "#PWR04" H 2400 2300 50  0001 C CNN
-F 1 "+12V" H 2415 2623 50  0000 C CNN
-F 2 "" H 2400 2450 50  0001 C CNN
-F 3 "" H 2400 2450 50  0001 C CNN
-	1    2400 2450
+P 7000 2650
+F 0 "#PWR04" H 7000 2500 50  0001 C CNN
+F 1 "+12V" H 7015 2823 50  0000 C CNN
+F 2 "" H 7000 2650 50  0001 C CNN
+F 3 "" H 7000 2650 50  0001 C CNN
+	1    7000 2650
 	1    0    0    -1  
 $EndComp
 $Comp
 L Motorrumsstyrning-rescue:+5V-power #PWR05
 U 1 1 60B331EC
-P 2600 2500
-F 0 "#PWR05" H 2600 2350 50  0001 C CNN
-F 1 "+5V" H 2615 2673 50  0000 C CNN
-F 2 "" H 2600 2500 50  0001 C CNN
-F 3 "" H 2600 2500 50  0001 C CNN
-	1    2600 2500
+P 7200 2700
+F 0 "#PWR05" H 7200 2550 50  0001 C CNN
+F 1 "+5V" H 7215 2873 50  0000 C CNN
+F 2 "" H 7200 2700 50  0001 C CNN
+F 3 "" H 7200 2700 50  0001 C CNN
+	1    7200 2700
 	1    0    0    -1  
 $EndComp
 $Comp
 L Motorrumsstyrning-rescue:+3V3-power #PWR07
 U 1 1 60B33683
-P 2800 2500
-F 0 "#PWR07" H 2800 2350 50  0001 C CNN
-F 1 "+3V3" H 2815 2673 50  0000 C CNN
-F 2 "" H 2800 2500 50  0001 C CNN
-F 3 "" H 2800 2500 50  0001 C CNN
-	1    2800 2500
+P 7400 2700
+F 0 "#PWR07" H 7400 2550 50  0001 C CNN
+F 1 "+3V3" H 7415 2873 50  0000 C CNN
+F 2 "" H 7400 2700 50  0001 C CNN
+F 3 "" H 7400 2700 50  0001 C CNN
+	1    7400 2700
 	1    0    0    -1  
 $EndComp
 $Comp
 L Motorrumsstyrning-rescue:R_Small-Device R9
 U 1 1 60B3CEF3
-P 5100 6400
-F 0 "R9" H 5159 6446 50  0000 L CNN
-F 1 "10k" H 5159 6355 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 5100 6400 50  0001 C CNN
-F 3 "~" H 5100 6400 50  0001 C CNN
-	1    5100 6400
+P 9350 3600
+F 0 "R9" H 9409 3646 50  0000 L CNN
+F 1 "10k" H 9409 3555 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 9350 3600 50  0001 C CNN
+F 3 "~" H 9350 3600 50  0001 C CNN
+	1    9350 3600
 	1    0    0    -1  
 $EndComp
 $Comp
 L Motorrumsstyrning-rescue:R_Small-Device R8
 U 1 1 60B3CEF9
-P 5100 6200
-F 0 "R8" H 5159 6246 50  0000 L CNN
-F 1 "4k2" H 5159 6155 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 5100 6200 50  0001 C CNN
-F 3 "~" H 5100 6200 50  0001 C CNN
-	1    5100 6200
+P 9350 3400
+F 0 "R8" H 9409 3446 50  0000 L CNN
+F 1 "4k2" H 9409 3355 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 9350 3400 50  0001 C CNN
+F 3 "~" H 9350 3400 50  0001 C CNN
+	1    9350 3400
 	1    0    0    -1  
 $EndComp
-Text Label 5850 6100 0    50   ~ 0
+Text Label 10100 3300 0    50   ~ 0
 Tach_12V
 $Comp
 L Motorrumsstyrning-rescue:GND-power #PWR010
 U 1 1 60B3CF01
-P 5100 6500
-F 0 "#PWR010" H 5100 6250 50  0001 C CNN
-F 1 "GND" H 5105 6327 50  0000 C CNN
-F 2 "" H 5100 6500 50  0001 C CNN
-F 3 "" H 5100 6500 50  0001 C CNN
-	1    5100 6500
+P 9350 3700
+F 0 "#PWR010" H 9350 3450 50  0001 C CNN
+F 1 "GND" H 9355 3527 50  0000 C CNN
+F 2 "" H 9350 3700 50  0001 C CNN
+F 3 "" H 9350 3700 50  0001 C CNN
+	1    9350 3700
 	1    0    0    -1  
 $EndComp
-Text Label 4600 6300 0    50   ~ 0
+Text Label 8850 3500 0    50   ~ 0
 Tachometer
-Connection ~ 5100 6300
-Connection ~ 5850 6400
-Text Label 5400 6400 0    50   ~ 0
+Connection ~ 9350 3500
+Connection ~ 10100 3600
+Text Label 9650 3600 0    50   ~ 0
 Deadmans
 $Comp
 L Motorrumsstyrning-rescue:GND-power #PWR013
 U 1 1 6094B138
-P 5850 6600
-F 0 "#PWR013" H 5850 6350 50  0001 C CNN
-F 1 "GND" H 5855 6427 50  0000 C CNN
-F 2 "" H 5850 6600 50  0001 C CNN
-F 3 "" H 5850 6600 50  0001 C CNN
-	1    5850 6600
+P 10100 3800
+F 0 "#PWR013" H 10100 3550 50  0001 C CNN
+F 1 "GND" H 10105 3627 50  0000 C CNN
+F 2 "" H 10100 3800 50  0001 C CNN
+F 3 "" H 10100 3800 50  0001 C CNN
+	1    10100 3800
 	1    0    0    -1  
 $EndComp
 $Comp
 L Motorrumsstyrning-rescue:R_Small-Device R12
 U 1 1 60949FD4
-P 5850 6300
-F 0 "R12" H 5909 6346 50  0000 L CNN
-F 1 "4k2" H 5909 6255 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 5850 6300 50  0001 C CNN
-F 3 "~" H 5850 6300 50  0001 C CNN
-	1    5850 6300
+P 10100 3500
+F 0 "R12" H 10159 3546 50  0000 L CNN
+F 1 "4k2" H 10159 3455 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 10100 3500 50  0001 C CNN
+F 3 "~" H 10100 3500 50  0001 C CNN
+	1    10100 3500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Motorrumsstyrning-rescue:R_Small-Device R13
 U 1 1 60949B67
-P 5850 6500
-F 0 "R13" H 5909 6546 50  0000 L CNN
-F 1 "10k" H 5909 6455 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 5850 6500 50  0001 C CNN
-F 3 "~" H 5850 6500 50  0001 C CNN
-	1    5850 6500
+P 10100 3700
+F 0 "R13" H 10159 3746 50  0000 L CNN
+F 1 "10k" H 10159 3655 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 10100 3700 50  0001 C CNN
+F 3 "~" H 10100 3700 50  0001 C CNN
+	1    10100 3700
 	1    0    0    -1  
 $EndComp
-Text Notes 8900 650  0    50   ~ 0
+Text Notes 6400 650  0    50   ~ 0
 CAN Transceiver
-Text Label 9000 1400 0    50   ~ 0
+Text Label 6500 1400 0    50   ~ 0
 CAN_RX
 Wire Wire Line
-	9000 1400 9400 1400
-Text Label 9000 1300 0    50   ~ 0
+	6500 1400 6900 1400
+Text Label 6500 1300 0    50   ~ 0
 CAN_TX
 Wire Wire Line
-	9000 1300 9400 1300
+	6500 1300 6900 1300
 Wire Wire Line
-	10500 1600 11000 1600
-Connection ~ 10500 1600
+	8000 1600 8500 1600
+Connection ~ 8000 1600
 Wire Wire Line
-	10500 1400 11000 1400
-Connection ~ 10500 1400
+	8000 1400 8500 1400
+Connection ~ 8000 1400
 Wire Notes Line
-	11150 2150 8850 2150
+	8650 2150 6350 2150
 Wire Notes Line
-	8850 2150 8850 550 
+	6350 2150 6350 550 
 Wire Notes Line
-	8850 550  11150 550 
+	6350 550  8650 550 
 Wire Notes Line
-	11150 550  11150 2150
+	8650 550  8650 2150
 Wire Notes Line
 	550  7700 4250 7700
 Wire Notes Line
@@ -647,491 +643,334 @@ Wire Notes Line
 Text Notes 5350 7050 0    50   ~ 0
 Mounting Hole Grounding
 Wire Notes Line
-	6900 6850 6900 3250
+	11150 5900 11150 4150
 Wire Notes Line
-	6900 3250 4500 3250
-Wire Notes Line
-	4500 3250 4500 6850
-Wire Notes Line
-	4500 6850 6900 6850
-Text Label 2000 4050 2    50   ~ 0
+	11150 4150 8750 4150
+Text Label 6600 4250 2    50   ~ 0
 Deadmans
-Text Label 2000 4150 2    50   ~ 0
+Text Label 6600 4350 2    50   ~ 0
 Tachometer
 Wire Wire Line
-	4600 6300 5100 6300
+	8850 3500 9350 3500
 Wire Wire Line
-	5400 6400 5850 6400
+	9650 3600 10100 3600
 $Comp
 L Motorrumsstyrning-rescue:LM1084-5.0-Regulator_Linear U2
 U 1 1 60B95E0A
-P 5100 1000
-F 0 "U2" H 5100 1242 50  0000 C CNN
-F 1 "LM1084-5.0" H 5100 1151 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 5100 1250 50  0001 C CIN
-F 3 "http://www.ti.com/lit/ds/symlink/lm1084.pdf" H 5100 1000 50  0001 C CNN
-	1    5100 1000
+P 1400 1000
+F 0 "U2" H 1400 1242 50  0000 C CNN
+F 1 "LM1084-5.0" H 1400 1151 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Horizontal_TabDown" H 1400 1250 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1084.pdf" H 1400 1000 50  0001 C CNN
+	1    1400 1000
 	1    0    0    -1  
 $EndComp
-Text Label 5850 6000 0    50   ~ 0
+Text Label 10100 3200 0    50   ~ 0
 Start_Relay_GND
-Text Label 5850 5600 0    50   ~ 0
+Text Label 10100 2800 0    50   ~ 0
 CANH
-Text Label 5850 5500 0    50   ~ 0
+Text Label 10100 2700 0    50   ~ 0
 CANL
 $Comp
 L Interface_CAN_LIN:MCP2551-I-P U3
 U 1 1 60C52B5A
-P 9900 1500
-F 0 "U3" H 10250 1850 50  0000 C CNN
-F 1 "MCP2551-I-P" H 9500 1850 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 9900 1000 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/devicedoc/21667d.pdf" H 9900 1500 50  0001 C CNN
-	1    9900 1500
+P 7400 1500
+F 0 "U3" H 7750 1850 50  0000 C CNN
+F 1 "MCP2551-I-P" H 7000 1850 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 7400 1000 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/devicedoc/21667d.pdf" H 7400 1500 50  0001 C CNN
+	1    7400 1500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R15
 U 1 1 60C78D4C
-P 9400 1800
-F 0 "R15" H 9341 1754 50  0000 R CNN
-F 1 "R_Small" H 9341 1845 50  0000 R CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 9400 1800 50  0001 C CNN
-F 3 "~" H 9400 1800 50  0001 C CNN
-	1    9400 1800
+P 6900 1800
+F 0 "R15" H 6841 1754 50  0000 R CNN
+F 1 "R_Small" H 6841 1845 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 6900 1800 50  0001 C CNN
+F 3 "~" H 6900 1800 50  0001 C CNN
+	1    6900 1800
 	1    0    0    1   
 $EndComp
 $Comp
-L Motorrumsstyrning-rescue:GND-power #PWR019
+L Motorrumsstyrning-rescue:GND-power #PWR020
 U 1 1 60C791A1
-P 9400 1900
-F 0 "#PWR019" H 9400 1650 50  0001 C CNN
-F 1 "GND" H 9405 1727 50  0000 C CNN
-F 2 "" H 9400 1900 50  0001 C CNN
-F 3 "" H 9400 1900 50  0001 C CNN
-	1    9400 1900
+P 6900 1900
+F 0 "#PWR020" H 6900 1650 50  0001 C CNN
+F 1 "GND" H 6905 1727 50  0000 C CNN
+F 2 "" H 6900 1900 50  0001 C CNN
+F 3 "" H 6900 1900 50  0001 C CNN
+	1    6900 1900
 	1    0    0    -1  
 $EndComp
 $Comp
-L Motorrumsstyrning-rescue:Screw_Terminal_01x10-Connector J23
+L Motorrumsstyrning-rescue:Screw_Terminal_01x10-Connector J14
 U 1 1 60C79806
-P 6700 4250
-F 0 "J23" H 6650 4750 50  0000 L CNN
-F 1 "Screw_Terminal_01x10" V 6800 3800 50  0000 L CNN
-F 2 "Vera-MRS-21:TerminalBlock_Phoenix_MPT-0,5-10-2.54_1x10_P2.54mm_Horizontal" H 6700 4250 50  0001 C CNN
-F 3 "~" H 6700 4250 50  0001 C CNN
-	1    6700 4250
+P 10950 5250
+F 0 "J14" H 10900 5750 50  0000 L CNN
+F 1 "Screw_Terminal_01x10" V 11050 4800 50  0000 L CNN
+F 2 "Vera-MRS-21:TerminalBlock_Phoenix_MPT-0,5-10-2.54_1x10_P2.54mm_Horizontal" H 10950 5250 50  0001 C CNN
+F 3 "~" H 10950 5250 50  0001 C CNN
+	1    10950 5250
 	1    0    0    -1  
 $EndComp
-Text Label 5200 4650 0    50   ~ 0
+Text Label 9450 5650 0    50   ~ 0
 Injector_IN
-Text Label 5200 4750 0    50   ~ 0
+Text Label 9450 5750 0    50   ~ 0
 Injector_OUT
-Text Label 2000 3700 2    50   ~ 0
+Text Label 6600 3900 2    50   ~ 0
 Start_Enable
 $Comp
 L Transistor_BJT:BC337 Q1
 U 1 1 60C819FD
-P 7600 1000
-F 0 "Q1" H 7791 1046 50  0000 L CNN
-F 1 "BC337" H 7791 955 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7800 925 50  0001 L CIN
-F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bc337.pdf" H 7600 1000 50  0001 L CNN
-	1    7600 1000
+P 10050 1000
+F 0 "Q1" H 10241 1046 50  0000 L CNN
+F 1 "BC337" H 10241 955 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 10250 925 50  0001 L CIN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bc337.pdf" H 10050 1000 50  0001 L CNN
+	1    10050 1000
 	1    0    0    -1  
 $EndComp
-Text Label 8400 800  2    50   ~ 0
+Text Label 10850 800  2    50   ~ 0
 Start_Relay_GND
 $Comp
-L power:GND #PWR018
+L power:GND #PWR019
 U 1 1 60C82964
-P 7700 1200
-F 0 "#PWR018" H 7700 950 50  0001 C CNN
-F 1 "GND" H 7705 1027 50  0000 C CNN
-F 2 "" H 7700 1200 50  0001 C CNN
-F 3 "" H 7700 1200 50  0001 C CNN
-	1    7700 1200
+P 10150 1200
+F 0 "#PWR019" H 10150 950 50  0001 C CNN
+F 1 "GND" H 10155 1027 50  0000 C CNN
+F 2 "" H 10150 1200 50  0001 C CNN
+F 3 "" H 10150 1200 50  0001 C CNN
+	1    10150 1200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R14
 U 1 1 60C832BB
-P 7300 1000
-F 0 "R14" V 7104 1000 50  0000 C CNN
-F 1 "1k" V 7195 1000 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 7300 1000 50  0001 C CNN
-F 3 "~" H 7300 1000 50  0001 C CNN
-	1    7300 1000
+P 9750 1000
+F 0 "R14" V 9554 1000 50  0000 C CNN
+F 1 "1k" V 9645 1000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 9750 1000 50  0001 C CNN
+F 3 "~" H 9750 1000 50  0001 C CNN
+	1    9750 1000
 	0    1    1    0   
 $EndComp
-Text Label 6700 1000 0    50   ~ 0
+Text Label 9150 1000 0    50   ~ 0
 Start_Enable
 Wire Wire Line
-	7200 1000 6700 1000
-Text Label 8400 1550 2    50   ~ 0
+	9650 1000 9150 1000
+Text Label 10850 1550 2    50   ~ 0
 Injector_IN
-Text Label 8400 1950 2    50   ~ 0
+Text Label 10850 1950 2    50   ~ 0
 Injector_OUT
 $Comp
 L Transistor_BJT:BC337 Q2
 U 1 1 60C8DD08
-P 7600 1750
-F 0 "Q2" H 7791 1796 50  0000 L CNN
-F 1 "BC337" H 7791 1705 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7800 1675 50  0001 L CIN
-F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bc337.pdf" H 7600 1750 50  0001 L CNN
-	1    7600 1750
+P 10050 1750
+F 0 "Q2" H 10241 1796 50  0000 L CNN
+F 1 "BC337" H 10241 1705 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 10250 1675 50  0001 L CIN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bc337.pdf" H 10050 1750 50  0001 L CNN
+	1    10050 1750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8400 1950 7700 1950
+	10850 1950 10150 1950
 Wire Wire Line
-	7700 1550 8400 1550
-Text Label 3200 3300 0    50   ~ 0
+	10150 1550 10850 1550
+Text Label 7800 3500 0    50   ~ 0
 Injector_Enable
-Text Label 6700 1750 0    50   ~ 0
+Text Label 9150 1750 0    50   ~ 0
 Injector_Enable
 Wire Wire Line
-	6700 1750 7400 1750
-Text Label 3200 3400 0    50   ~ 0
+	9150 1750 9850 1750
+Text Label 7800 3600 0    50   ~ 0
 PA3
-Text Label 2000 3500 2    50   ~ 0
+Text Label 6600 3700 2    50   ~ 0
 PB3
-Text Label 2000 3600 2    50   ~ 0
+Text Label 6600 3800 2    50   ~ 0
 PB4
-Text Label 3200 3500 0    50   ~ 0
+Text Label 7800 3700 0    50   ~ 0
 PA4
-Text Label 3200 3900 0    50   ~ 0
+Text Label 7800 4100 0    50   ~ 0
 PA8
-Text Label 5200 4050 0    50   ~ 0
+Text Label 9450 5050 0    50   ~ 0
 PA0
-Text Label 5200 4150 0    50   ~ 0
+Text Label 9450 5150 0    50   ~ 0
 PA1
-Text Label 5200 4250 0    50   ~ 0
+Text Label 9450 5250 0    50   ~ 0
 PA3
-Text Label 5200 3850 0    50   ~ 0
+Text Label 9450 4850 0    50   ~ 0
 PB3
-Text Label 5200 4550 0    50   ~ 0
+Text Label 9450 5550 0    50   ~ 0
 USART2_TX
-Text Label 5200 4450 0    50   ~ 0
+Text Label 9450 5450 0    50   ~ 0
 USART2_RX
 $Comp
 L power:GND #PWR06
 U 1 1 60D69869
-P 2600 4650
-F 0 "#PWR06" H 2600 4400 50  0001 C CNN
-F 1 "GND" H 2605 4477 50  0000 C CNN
-F 2 "" H 2600 4650 50  0001 C CNN
-F 3 "" H 2600 4650 50  0001 C CNN
-	1    2600 4650
+P 7200 4850
+F 0 "#PWR06" H 7200 4600 50  0001 C CNN
+F 1 "GND" H 7205 4677 50  0000 C CNN
+F 2 "" H 7200 4850 50  0001 C CNN
+F 3 "" H 7200 4850 50  0001 C CNN
+	1    7200 4850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2600 4650 2600 4600
+	7200 4850 7200 4800
 Wire Wire Line
-	2600 4600 2650 4600
+	7200 4800 7250 4800
 Wire Wire Line
-	2600 4600 2550 4600
-Connection ~ 2600 4600
-Text Label 1800 2950 0    50   ~ 0
+	7200 4800 7150 4800
+Connection ~ 7200 4800
+Text Label 6400 3150 0    50   ~ 0
 ~RST
 Wire Wire Line
-	1800 2950 2000 2950
+	6400 3150 6600 3150
 Wire Wire Line
-	2000 2950 2000 2900
+	6600 3150 6600 3100
 Wire Wire Line
-	2000 2950 2000 3000
-Connection ~ 2000 2950
-Text Label 5850 5900 0    50   ~ 0
+	6600 3150 6600 3200
+Connection ~ 6600 3150
+Text Label 10100 3100 0    50   ~ 0
 ~RST
 Wire Notes Line
-	6850 5000 4550 5000
-Text Notes 4550 5100 0    50   ~ 0
+	11150 5900 8750 5900
+Text Notes 8800 2350 0    50   ~ 0
 Left Screw Terminal
 Wire Wire Line
-	7700 800  8400 800 
+	10150 800  10850 800 
 Wire Notes Line
-	8750 2150 6050 2150
-Wire Notes Line
-	6050 550  6050 2150
-Wire Notes Line
-	6050 550  8750 550 
+	11150 2150 8750 2150
 Wire Notes Line
 	8750 550  8750 2150
-Text Notes 6100 650  0    50   ~ 0
+Wire Notes Line
+	8750 550  11150 550 
+Wire Notes Line
+	11150 550  11150 2150
+Text Notes 8800 650  0    50   ~ 0
 Transistors
 Wire Wire Line
-	5850 5500 6500 5500
+	10100 2700 10750 2700
 Wire Wire Line
-	5850 5600 6500 5600
+	10100 2800 10750 2800
 Wire Wire Line
-	5850 5900 6500 5900
+	10100 3100 10750 3100
 Wire Wire Line
-	5850 6000 6500 6000
+	10100 3200 10750 3200
 Wire Wire Line
-	5850 6200 6500 6200
+	10100 3400 10750 3400
 Wire Wire Line
-	5100 6100 6500 6100
+	9350 3300 10750 3300
 Wire Wire Line
 	2550 5400 2800 5400
-Text Label 1850 3300 0    50   ~ 0
+Text Label 6450 3500 0    50   ~ 0
 ~CD
-Text Label 1850 3200 0    50   ~ 0
+Text Label 6450 3400 0    50   ~ 0
 ~WP
 Wire Wire Line
-	1850 3300 2000 3300
+	6450 3500 6600 3500
 Wire Wire Line
-	2000 3200 1850 3200
-Text Label 3200 2950 0    50   ~ 0
+	6600 3400 6450 3400
+Text Label 8000 3150 2    50   ~ 0
 AREF
 $Comp
-L Connector:Conn_01x01_Female J14
-U 1 1 60EB8913
-P 6250 3800
-F 0 "J14" H 6300 3800 50  0000 C CNN
-F 1 "Jumper" H 6400 3800 50  0001 C CNN
-F 2 "Vera-MRS-21:THT_Jumper" H 6250 3800 50  0001 C CNN
-F 3 "~" H 6250 3800 50  0001 C CNN
-	1    6250 3800
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:Conn_01x01_Female J15
-U 1 1 60EE26CB
-P 6250 3900
-F 0 "J15" H 6300 3900 50  0000 C CNN
-F 1 "Jumper" H 6400 3900 50  0001 C CNN
-F 2 "Vera-MRS-21:THT_Jumper" H 6250 3900 50  0001 C CNN
-F 3 "~" H 6250 3900 50  0001 C CNN
-	1    6250 3900
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:Conn_01x01_Female J16
-U 1 1 60EE291B
-P 6250 4000
-F 0 "J16" H 6300 4000 50  0000 C CNN
-F 1 "Jumper" H 6400 4000 50  0001 C CNN
-F 2 "Vera-MRS-21:THT_Jumper" H 6250 4000 50  0001 C CNN
-F 3 "~" H 6250 4000 50  0001 C CNN
-	1    6250 4000
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:Conn_01x01_Female J17
-U 1 1 60EE2B72
-P 6250 4100
-F 0 "J17" H 6300 4100 50  0000 C CNN
-F 1 "Jumper" H 6400 4100 50  0001 C CNN
-F 2 "Vera-MRS-21:THT_Jumper" H 6250 4100 50  0001 C CNN
-F 3 "~" H 6250 4100 50  0001 C CNN
-	1    6250 4100
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:Conn_01x01_Female J18
-U 1 1 60EE2CE9
-P 6250 4200
-F 0 "J18" H 6300 4200 50  0000 C CNN
-F 1 "Jumper" H 6400 4200 50  0001 C CNN
-F 2 "Vera-MRS-21:THT_Jumper" H 6250 4200 50  0001 C CNN
-F 3 "~" H 6250 4200 50  0001 C CNN
-	1    6250 4200
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:Conn_01x01_Female J19
-U 1 1 60EE2E8F
-P 6250 4300
-F 0 "J19" H 6300 4300 50  0000 C CNN
-F 1 "Jumper" H 6400 4300 50  0001 C CNN
-F 2 "Vera-MRS-21:THT_Jumper" H 6250 4300 50  0001 C CNN
-F 3 "~" H 6250 4300 50  0001 C CNN
-	1    6250 4300
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:Conn_01x01_Female J20
-U 1 1 60EE305B
-P 6250 4400
-F 0 "J20" H 6300 4400 50  0000 C CNN
-F 1 "Jumper" H 6400 4400 50  0001 C CNN
-F 2 "Vera-MRS-21:THT_Jumper" H 6250 4400 50  0001 C CNN
-F 3 "~" H 6250 4400 50  0001 C CNN
-	1    6250 4400
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:Conn_01x01_Female J21
-U 1 1 60EE31FB
-P 6250 4500
-F 0 "J21" H 6300 4500 50  0000 C CNN
-F 1 "Jumper" H 6400 4500 50  0001 C CNN
-F 2 "Vera-MRS-21:THT_Jumper" H 6250 4500 50  0001 C CNN
-F 3 "~" H 6250 4500 50  0001 C CNN
-	1    6250 4500
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector:Conn_01x01_Female J22
-U 1 1 60EE3880
-P 6250 4800
-F 0 "J22" H 6300 4800 50  0000 C CNN
-F 1 "Jumper" H 6400 4800 50  0001 C CNN
-F 2 "Vera-MRS-21:THT_Jumper" H 6250 4800 50  0001 C CNN
-F 3 "~" H 6250 4800 50  0001 C CNN
-	1    6250 4800
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6450 3800 6450 3850
-Wire Wire Line
-	6450 3850 6500 3850
-Wire Wire Line
-	6450 3900 6450 3950
-Wire Wire Line
-	6450 4000 6450 4050
-Wire Wire Line
-	6450 4100 6450 4150
-Wire Wire Line
-	6450 4200 6450 4250
-Wire Wire Line
-	6450 4300 6450 4350
-Wire Wire Line
-	6450 4400 6450 4450
-Wire Wire Line
-	6450 4500 6450 4550
-$Comp
-L power:GND #PWR017
+L power:GND #PWR014
 U 1 1 60F3DE15
-P 6450 4800
-F 0 "#PWR017" H 6450 4550 50  0001 C CNN
-F 1 "GND" H 6450 4650 50  0000 C CNN
-F 2 "" H 6450 4800 50  0001 C CNN
-F 3 "" H 6450 4800 50  0001 C CNN
-	1    6450 4800
+P 10200 4450
+F 0 "#PWR014" H 10200 4200 50  0001 C CNN
+F 1 "GND" H 10200 4300 50  0000 C CNN
+F 2 "" H 10200 4450 50  0001 C CNN
+F 3 "" H 10200 4450 50  0001 C CNN
+	1    10200 4450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6450 3950 6500 3950
+	9450 5750 10750 5750
 Wire Wire Line
-	6450 4050 6500 4050
-Wire Wire Line
-	6450 4150 6500 4150
-Wire Wire Line
-	6450 4250 6500 4250
-Wire Wire Line
-	6450 4350 6500 4350
-Wire Wire Line
-	6450 4450 6500 4450
-Wire Wire Line
-	6450 4550 6500 4550
-Wire Wire Line
-	5200 4750 6500 4750
-Wire Wire Line
-	5200 4650 6500 4650
+	9450 5650 10750 5650
 Wire Wire Line
 	1950 5400 1950 6450
 $Comp
 L Motorrumsstyrning-rescue:R_Small-Device R2
 U 1 1 60EFCE1F
-P 2050 7000
-F 0 "R2" H 2109 7046 50  0000 L CNN
-F 1 "50k" H 2109 6955 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 2050 7000 50  0001 C CNN
-F 3 "~" H 2050 7000 50  0001 C CNN
-	1    2050 7000
-	1    0    0    -1  
+P 5800 3900
+F 0 "R2" H 5859 3946 50  0000 L CNN
+F 1 "50k" H 5859 3855 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 5800 3900 50  0001 C CNN
+F 3 "~" H 5800 3900 50  0001 C CNN
+	1    5800 3900
+	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	1900 7300 2050 7300
-Wire Wire Line
-	2050 7300 2050 7100
 Connection ~ 1900 7300
-Wire Wire Line
-	2050 6900 2050 6150
-Wire Wire Line
-	1850 6150 2050 6150
 Text Label 4150 6150 2    50   ~ 0
 ~CS
 Wire Wire Line
 	4150 6150 3650 6150
-Connection ~ 2050 6150
-Text Label 900  3600 0    50   ~ 0
+Text Label 5500 3800 0    50   ~ 0
 ~CS
-$Comp
-L Jumper:SolderJumper_2_Open JP1
-U 1 1 60F14BEA
-P 1250 3600
-F 0 "JP1" H 1250 3805 50  0000 C CNN
-F 1 "CS_Jumper" H 1250 3714 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 1250 3600 50  0001 C CNN
-F 3 "~" H 1250 3600 50  0001 C CNN
-	1    1250 3600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	900  3600 1100 3600
+	5500 3800 5800 3800
 Wire Wire Line
-	1400 3600 2000 3600
+	9250 2900 9800 2900
 Wire Wire Line
-	5000 5700 5550 5700
+	9250 3000 9700 3000
+Connection ~ 9800 2900
+Connection ~ 9700 3000
 Wire Wire Line
-	5000 5800 5450 5800
-Connection ~ 5550 5700
-Connection ~ 5450 5800
+	9750 2600 9800 2600
+Connection ~ 9750 2600
 Wire Wire Line
-	5500 5400 5550 5400
-Connection ~ 5500 5400
+	9750 2550 9750 2600
 Wire Wire Line
-	5500 5350 5500 5400
+	9700 2600 9750 2600
 Wire Wire Line
-	5450 5400 5500 5400
-Wire Wire Line
-	5450 5800 5450 5600
+	9700 3000 9700 2800
 $Comp
 L Motorrumsstyrning-rescue:R_Small-Device R10
 U 1 1 60B53DE1
-P 5450 5500
-F 0 "R10" H 5509 5546 50  0000 L CNN
-F 1 "1k" H 5509 5455 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 5450 5500 50  0001 C CNN
-F 3 "~" H 5450 5500 50  0001 C CNN
-	1    5450 5500
+P 9700 2700
+F 0 "R10" H 9759 2746 50  0000 L CNN
+F 1 "1k" H 9759 2655 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 9700 2700 50  0001 C CNN
+F 3 "~" H 9700 2700 50  0001 C CNN
+	1    9700 2700
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	5550 5700 5550 5600
+	9800 2900 9800 2800
 $Comp
 L Motorrumsstyrning-rescue:R_Small-Device R11
 U 1 1 60B4D89B
-P 5550 5500
-F 0 "R11" H 5609 5546 50  0000 L CNN
-F 1 "1k" H 5609 5455 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 5550 5500 50  0001 C CNN
-F 3 "~" H 5550 5500 50  0001 C CNN
-	1    5550 5500
+P 9800 2700
+F 0 "R11" H 9859 2746 50  0000 L CNN
+F 1 "1k" H 9859 2655 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 9800 2700 50  0001 C CNN
+F 3 "~" H 9800 2700 50  0001 C CNN
+	1    9800 2700
 	1    0    0    -1  
 $EndComp
 $Comp
 L Motorrumsstyrning-rescue:+3V3-power #PWR011
 U 1 1 60B4D1BC
-P 5500 5350
-F 0 "#PWR011" H 5500 5200 50  0001 C CNN
-F 1 "+3V3" H 5515 5523 50  0000 C CNN
-F 2 "" H 5500 5350 50  0001 C CNN
-F 3 "" H 5500 5350 50  0001 C CNN
-	1    5500 5350
+P 9750 2550
+F 0 "#PWR011" H 9750 2400 50  0001 C CNN
+F 1 "+3V3" H 9765 2723 50  0000 C CNN
+F 2 "" H 9750 2550 50  0001 C CNN
+F 3 "" H 9750 2550 50  0001 C CNN
+	1    9750 2550
 	1    0    0    -1  
 $EndComp
-Text Label 5000 5700 0    50   ~ 0
+Text Label 9250 2900 0    50   ~ 0
 I2C1_SCL
-Text Label 5000 5800 0    50   ~ 0
+Text Label 9250 3000 0    50   ~ 0
 I2C1_SDA
 Wire Wire Line
-	5450 5800 6500 5800
+	9700 3000 10750 3000
 Wire Wire Line
-	5550 5700 6500 5700
+	9800 2900 10750 2900
 $Comp
 L Connector:Conn_01x01_Female J3
 U 1 1 60F92441
@@ -1239,8 +1078,6 @@ Wire Wire Line
 	3650 6150 3650 6100
 Connection ~ 3650 6150
 Wire Wire Line
-	3650 6150 2050 6150
-Wire Wire Line
 	3650 5900 3650 5850
 Connection ~ 3650 5900
 Wire Wire Line
@@ -1250,223 +1087,278 @@ Wire Wire Line
 Connection ~ 3650 5800
 Wire Wire Line
 	3650 5800 4150 5800
-Text Label 5200 4350 0    50   ~ 0
+Text Label 9450 5350 0    50   ~ 0
 PA4
-Text Label 3200 3100 0    50   ~ 0
+Text Label 7800 3300 0    50   ~ 0
 PA0
-Text Label 3200 3200 0    50   ~ 0
+Text Label 7800 3400 0    50   ~ 0
 PA1
-Text Notes 7050 4700 0    50   ~ 0
-6. Kolla vad VREF ska vara på STM32 och CAN transceiver\n8. Kolla upp strömförsörjning, VIN/12V/5V/3V3. Varifrån kommer allt? \n9. Skaffa footprint till kondensatorer C1,C2
-Text Notes 4550 3350 0    50   ~ 0
-Right Screw Terminal and "breadboard"
+Text Notes 8800 4250 0    50   ~ 0
+Bottom Screw Terminal and header
 $Comp
 L Jumper:SolderJumper_2_Bridged JP2
 U 1 1 612864F8
-P 5900 3850
-F 0 "JP2" H 5700 3900 50  0000 C CNN
-F 1 "SolderJumper_2_Bridged" H 5900 3964 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 5900 3850 50  0001 C CNN
-F 3 "~" H 5900 3850 50  0001 C CNN
-	1    5900 3850
+P 10150 4850
+F 0 "JP2" H 9950 4900 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 10150 4964 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 10150 4850 50  0001 C CNN
+F 3 "~" H 10150 4850 50  0001 C CNN
+	1    10150 4850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5200 3850 5750 3850
+	9450 4850 10000 4850
 Wire Wire Line
-	5200 3950 5750 3950
+	9450 4950 10000 4950
 Wire Wire Line
-	5200 4050 5750 4050
+	9450 5050 10000 5050
 Wire Wire Line
-	5200 4150 5750 4150
+	9450 5150 10000 5150
 Wire Wire Line
-	5200 4250 5750 4250
+	9450 5250 10000 5250
 Wire Wire Line
-	5200 4350 5750 4350
-Wire Wire Line
-	6050 3850 6450 3850
-Connection ~ 6450 3850
-Wire Wire Line
-	6050 3950 6450 3950
-Connection ~ 6450 3950
-Wire Wire Line
-	6050 4050 6450 4050
-Connection ~ 6450 4050
-Wire Wire Line
-	6050 4150 6450 4150
-Connection ~ 6450 4150
-Wire Wire Line
-	6050 4250 6450 4250
-Connection ~ 6450 4250
-Wire Wire Line
-	6050 4350 6450 4350
-Connection ~ 6450 4350
+	9450 5350 10000 5350
 $Comp
 L Jumper:SolderJumper_2_Bridged JP3
 U 1 1 61320BC4
-P 5900 3950
-F 0 "JP3" H 5700 4000 50  0000 C CNN
-F 1 "SolderJumper_2_Bridged" H 5900 4064 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 5900 3950 50  0001 C CNN
-F 3 "~" H 5900 3950 50  0001 C CNN
-	1    5900 3950
+P 10150 4950
+F 0 "JP3" H 9950 5000 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 10150 5064 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 10150 4950 50  0001 C CNN
+F 3 "~" H 10150 4950 50  0001 C CNN
+	1    10150 4950
 	1    0    0    -1  
 $EndComp
 $Comp
 L Jumper:SolderJumper_2_Bridged JP4
 U 1 1 61320E17
-P 5900 4050
-F 0 "JP4" H 5700 4100 50  0000 C CNN
-F 1 "SolderJumper_2_Bridged" H 5900 4164 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 5900 4050 50  0001 C CNN
-F 3 "~" H 5900 4050 50  0001 C CNN
-	1    5900 4050
+P 10150 5050
+F 0 "JP4" H 9950 5100 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 10150 5164 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 10150 5050 50  0001 C CNN
+F 3 "~" H 10150 5050 50  0001 C CNN
+	1    10150 5050
 	1    0    0    -1  
 $EndComp
 $Comp
 L Jumper:SolderJumper_2_Bridged JP5
 U 1 1 6132102D
-P 5900 4150
-F 0 "JP5" H 5700 4200 50  0000 C CNN
-F 1 "SolderJumper_2_Bridged" H 5900 4264 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 5900 4150 50  0001 C CNN
-F 3 "~" H 5900 4150 50  0001 C CNN
-	1    5900 4150
+P 10150 5150
+F 0 "JP5" H 9950 5200 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 10150 5264 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 10150 5150 50  0001 C CNN
+F 3 "~" H 10150 5150 50  0001 C CNN
+	1    10150 5150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Jumper:SolderJumper_2_Bridged JP6
 U 1 1 61321287
-P 5900 4250
-F 0 "JP6" H 5700 4300 50  0000 C CNN
-F 1 "SolderJumper_2_Bridged" H 5900 4364 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 5900 4250 50  0001 C CNN
-F 3 "~" H 5900 4250 50  0001 C CNN
-	1    5900 4250
+P 10150 5250
+F 0 "JP6" H 9950 5300 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 10150 5364 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 10150 5250 50  0001 C CNN
+F 3 "~" H 10150 5250 50  0001 C CNN
+	1    10150 5250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Jumper:SolderJumper_2_Bridged JP7
 U 1 1 61321649
-P 5900 4350
-F 0 "JP7" H 5700 4400 50  0000 C CNN
-F 1 "SolderJumper_2_Bridged" H 5900 4464 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 5900 4350 50  0001 C CNN
-F 3 "~" H 5900 4350 50  0001 C CNN
-	1    5900 4350
+P 10150 5350
+F 0 "JP7" H 9950 5400 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 10150 5464 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 10150 5350 50  0001 C CNN
+F 3 "~" H 10150 5350 50  0001 C CNN
+	1    10150 5350
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	550  4950 4250 4950
+	5300 5200 8650 5200
 Wire Notes Line
-	4250 4950 4250 2000
+	8650 5200 8650 2250
 Wire Notes Line
-	4250 2000 550  2000
+	8650 2250 5300 2250
 Wire Notes Line
-	550  2000 550  4950
-Text Notes 700  2100 0    50   ~ 0
+	5300 2250 5300 5200
+Text Notes 5450 2350 0    50   ~ 0
 NUCLEO32 - F303 / L432
 $Comp
 L Jumper:SolderJumper_2_Bridged JP8
 U 1 1 61363F35
-P 5900 4450
-F 0 "JP8" H 5700 4500 50  0000 C CNN
-F 1 "SolderJumper_2_Bridged" H 5900 4564 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 5900 4450 50  0001 C CNN
-F 3 "~" H 5900 4450 50  0001 C CNN
-	1    5900 4450
+P 10150 5450
+F 0 "JP8" H 9950 5500 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 10150 5564 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 10150 5450 50  0001 C CNN
+F 3 "~" H 10150 5450 50  0001 C CNN
+	1    10150 5450
 	1    0    0    -1  
 $EndComp
 $Comp
 L Jumper:SolderJumper_2_Bridged JP9
 U 1 1 61364258
-P 5900 4550
-F 0 "JP9" H 5700 4600 50  0000 C CNN
-F 1 "SolderJumper_2_Bridged" H 5900 4664 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 5900 4550 50  0001 C CNN
-F 3 "~" H 5900 4550 50  0001 C CNN
-	1    5900 4550
+P 10150 5550
+F 0 "JP9" H 9950 5600 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 10150 5664 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 10150 5550 50  0001 C CNN
+F 3 "~" H 10150 5550 50  0001 C CNN
+	1    10150 5550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5200 4450 5750 4450
+	9450 5450 10000 5450
 Wire Wire Line
-	6050 4450 6450 4450
-Connection ~ 6450 4450
-Wire Wire Line
-	5200 4550 5750 4550
-Wire Wire Line
-	6050 4550 6450 4550
-Connection ~ 6450 4550
-Text Notes 7050 5300 0    50   ~ 0
-1. SB16 and SB18 on F303 must be desoldered to enable SPI for pins PA5 and PA6
-Text Notes 7050 5150 0    100  ~ 20
-Notes
-Wire Notes Line rgb(0, 0, 0)
-	6950 5200 11200 5200
-Text Notes 7050 6300 0    100  ~ 20
-Links
-Text Notes 11150 6450 2    50   Italic 0
-https://github.com/kiwih/cubemx-mmc-sd-card
-Wire Notes Line style solid rgb(0, 0, 0)
-	6950 6500 6950 4950
-Wire Notes Line
-	6950 6350 11200 6350
-Wire Notes Line style solid rgb(0, 0, 0)
-	6950 4950 11200 4950
-Wire Notes Line style solid rgb(0, 0, 0)
-	6950 6100 11200 6100
+	9450 5550 10000 5550
 $Comp
-L Connector:Conn_01x01_Female J11
+L Connector:Conn_01x01_Female J10
 U 1 1 614D9D06
-P 4450 1000
-F 0 "J11" H 4500 1000 50  0000 C CNN
-F 1 "Jumper" H 4600 1000 50  0001 C CNN
-F 2 "Vera-MRS-21:THT_Jumper" H 4450 1000 50  0001 C CNN
-F 3 "~" H 4450 1000 50  0001 C CNN
-	1    4450 1000
+P 750 1000
+F 0 "J10" H 800 1000 50  0000 C CNN
+F 1 "Jumper" H 900 1000 50  0001 C CNN
+F 2 "Vera-MRS-21:THT_Jumper" H 750 1000 50  0001 C CNN
+F 3 "~" H 750 1000 50  0001 C CNN
+	1    750  1000
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:Conn_01x01_Female J13
-U 1 1 614DA020
-P 5750 1000
-F 0 "J13" H 5800 1000 50  0000 C CNN
-F 1 "Jumper" H 5900 1000 50  0001 C CNN
-F 2 "Vera-MRS-21:THT_Jumper" H 5750 1000 50  0001 C CNN
-F 3 "~" H 5750 1000 50  0001 C CNN
-	1    5750 1000
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:Conn_01x01_Female J12
-U 1 1 614DA2D9
-P 5300 1400
-F 0 "J12" H 5350 1400 50  0000 C CNN
-F 1 "Jumper" H 5450 1400 50  0001 C CNN
-F 2 "Vera-MRS-21:THT_Jumper" H 5300 1400 50  0001 C CNN
-F 3 "~" H 5300 1400 50  0001 C CNN
-	1    5300 1400
+U 1 1 614DA020
+P 2050 1000
+F 0 "J12" H 2100 1000 50  0000 C CNN
+F 1 "Jumper" H 2200 1000 50  0001 C CNN
+F 2 "Vera-MRS-21:THT_Jumper" H 2050 1000 50  0001 C CNN
+F 3 "~" H 2050 1000 50  0001 C CNN
+	1    2050 1000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5100 1400 5100 1300
-Connection ~ 5100 1400
-Text Label 5200 3950 0    50   ~ 0
-PA8
-Wire Notes Line rgb(0, 0, 0)
-	6950 4700 11200 4700
 $Comp
-L Connector:Conn_01x01_Female J10
-U 1 1 6158A3EB
-P 3600 2950
-F 0 "J10" H 3650 2950 50  0000 C CNN
-F 1 "Jumper" H 3750 2950 50  0001 C CNN
-F 2 "Vera-MRS-21:THT_Jumper" H 3600 2950 50  0001 C CNN
-F 3 "~" H 3600 2950 50  0001 C CNN
-	1    3600 2950
+L Connector:Conn_01x01_Female J11
+U 1 1 614DA2D9
+P 1600 1400
+F 0 "J11" H 1650 1400 50  0000 C CNN
+F 1 "Jumper" H 1750 1400 50  0001 C CNN
+F 2 "Vera-MRS-21:THT_Jumper" H 1600 1400 50  0001 C CNN
+F 3 "~" H 1600 1400 50  0001 C CNN
+	1    1600 1400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3400 2950 3200 2950
+	1400 1400 1400 1300
+Connection ~ 1400 1400
+Text Label 9450 4950 0    50   ~ 0
+PA8
+Wire Wire Line
+	8000 3150 7800 3150
+$Comp
+L power:+5V #PWR016
+U 1 1 610F27A0
+P 10400 4550
+F 0 "#PWR016" H 10400 4400 50  0001 C CNN
+F 1 "+5V" H 10415 4723 50  0000 C CNN
+F 2 "" H 10400 4550 50  0001 C CNN
+F 3 "" H 10400 4550 50  0001 C CNN
+	1    10400 4550
+	1    0    0    -1  
+$EndComp
+Text Label 10200 4750 0    50   ~ 0
+AREF
+Wire Wire Line
+	10300 5550 10400 5550
+Wire Wire Line
+	10300 5450 10400 5450
+Wire Wire Line
+	10300 5350 10400 5350
+Wire Wire Line
+	10300 5250 10400 5250
+Wire Wire Line
+	10300 5150 10400 5150
+Wire Wire Line
+	10300 5050 10400 5050
+Wire Wire Line
+	10300 4950 10400 4950
+Wire Wire Line
+	10300 4850 10400 4850
+$Comp
+L Connector_Generic:Conn_01x11 J13
+U 1 1 6114CA70
+P 10600 5050
+F 0 "J13" H 10500 5650 50  0000 L CNN
+F 1 "Conn_01x11" V 10700 5300 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x11_P2.54mm_Vertical" H 10600 5050 50  0001 C CNN
+F 3 "~" H 10600 5050 50  0001 C CNN
+	1    10600 5050
+	1    0    0    -1  
+$EndComp
+Connection ~ 10400 5450
+Wire Wire Line
+	10400 5450 10750 5450
+Connection ~ 10400 5550
+Wire Wire Line
+	10400 5550 10750 5550
+Connection ~ 10400 4850
+Wire Wire Line
+	10400 4850 10750 4850
+Connection ~ 10400 4950
+Wire Wire Line
+	10400 4950 10750 4950
+Connection ~ 10400 5050
+Wire Wire Line
+	10400 5050 10750 5050
+Connection ~ 10400 5150
+Wire Wire Line
+	10400 5150 10750 5150
+Connection ~ 10400 5250
+Wire Wire Line
+	10400 5250 10750 5250
+Connection ~ 10400 5350
+Wire Wire Line
+	10400 5350 10750 5350
+Wire Wire Line
+	10200 4750 10400 4750
+Wire Wire Line
+	10200 4450 10300 4450
+Wire Wire Line
+	10300 4450 10300 4650
+Wire Wire Line
+	10300 4650 10400 4650
+NoConn ~ 6900 1600
+Text Notes 7000 6450 0    50   ~ 0
+8. Kolla upp strömförsörjning, VIN/12V/5V/3V3. Varifrån kommer allt? \n9. Skaffa footprint till kondensatorer C1,C2
+Wire Notes Line
+	8750 4150 8750 5900
+Wire Notes Line
+	8750 2250 8750 4050
+Wire Notes Line
+	8750 2250 11150 2250
+Wire Notes Line
+	8750 4050 11150 4050
+Wire Notes Line
+	11150 4050 11150 2250
+Connection ~ 5800 3800
+Wire Wire Line
+	1850 6150 3650 6150
+$Comp
+L Motorrumsstyrning-rescue:GND-power #PWR?
+U 1 1 6130AA47
+P 5800 4000
+F 0 "#PWR?" H 5800 3750 50  0001 C CNN
+F 1 "GND" H 5805 3827 50  0000 C CNN
+F 2 "" H 5800 4000 50  0001 C CNN
+F 3 "" H 5800 4000 50  0001 C CNN
+	1    5800 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 3800 6600 3800
+$Comp
+L Jumper:SolderJumper_2_Open JP1
+U 1 1 60F14BEA
+P 5950 3800
+F 0 "JP1" H 5950 4005 50  0000 C CNN
+F 1 "CS_Jumper" H 5950 3914 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 5950 3800 50  0001 C CNN
+F 3 "~" H 5950 3800 50  0001 C CNN
+	1    5950 3800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
