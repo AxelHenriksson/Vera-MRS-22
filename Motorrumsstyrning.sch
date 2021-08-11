@@ -459,9 +459,9 @@ F 3 "" H 7400 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 7800 4200 0    50   ~ 0
-USART2_TX
+USART1_TX
 Text Label 7800 4300 0    50   ~ 0
-USART2_RX
+USART1_RX
 Text Label 6600 4000 2    50   ~ 0
 I2C1_SCL
 Text Label 6600 4100 2    50   ~ 0
@@ -646,9 +646,9 @@ Wire Notes Line
 	11150 5900 11150 4150
 Wire Notes Line
 	11150 4150 8750 4150
-Text Label 6600 4250 2    50   ~ 0
-Deadmans
-Text Label 6600 4350 2    50   ~ 0
+Text Label 6600 3700 2    50   ~ 0
+PB3
+Text Label 7800 4100 0    50   ~ 0
 Tachometer
 Wire Wire Line
 	8850 3500 9350 3500
@@ -704,22 +704,11 @@ F 3 "" H 6900 1900 50  0001 C CNN
 	1    6900 1900
 	1    0    0    -1  
 $EndComp
-$Comp
-L Motorrumsstyrning-rescue:Screw_Terminal_01x10-Connector J14
-U 1 1 60C79806
-P 10950 5250
-F 0 "J14" H 10900 5750 50  0000 L CNN
-F 1 "Screw_Terminal_01x10" V 11050 4800 50  0000 L CNN
-F 2 "Vera-MRS-21:TerminalBlock_Phoenix_MPT-0,5-10-2.54_1x10_P2.54mm_Horizontal" H 10950 5250 50  0001 C CNN
-F 3 "~" H 10950 5250 50  0001 C CNN
-	1    10950 5250
-	1    0    0    -1  
-$EndComp
 Text Label 9450 5650 0    50   ~ 0
 Injector_IN
 Text Label 9450 5750 0    50   ~ 0
 Injector_OUT
-Text Label 6600 3900 2    50   ~ 0
+Text Label 6550 3900 2    50   ~ 0
 Start_Enable
 $Comp
 L Transistor_BJT:BC337 Q1
@@ -779,7 +768,7 @@ Wire Wire Line
 	10850 1950 10150 1950
 Wire Wire Line
 	10150 1550 10850 1550
-Text Label 7800 3500 0    50   ~ 0
+Text Label 7800 3700 0    50   ~ 0
 Injector_Enable
 Text Label 9150 1750 0    50   ~ 0
 Injector_Enable
@@ -787,26 +776,20 @@ Wire Wire Line
 	9150 1750 9850 1750
 Text Label 7800 3600 0    50   ~ 0
 PA3
-Text Label 6600 3700 2    50   ~ 0
-PB3
 Text Label 6600 3800 2    50   ~ 0
 PB4
-Text Label 7800 3700 0    50   ~ 0
-PA4
-Text Label 7800 4100 0    50   ~ 0
-PA8
-Text Label 9450 5050 0    50   ~ 0
-PA0
+Text Label 6600 4350 2    50   ~ 0
+Deadmans
 Text Label 9450 5150 0    50   ~ 0
-PA1
+PA0
 Text Label 9450 5250 0    50   ~ 0
+PA1
+Text Label 9450 5350 0    50   ~ 0
 PA3
-Text Label 9450 4850 0    50   ~ 0
-PB3
 Text Label 9450 5550 0    50   ~ 0
-USART2_TX
+USART1_TX
 Text Label 9450 5450 0    50   ~ 0
-USART2_RX
+USART1_RX
 $Comp
 L power:GND #PWR06
 U 1 1 60D69869
@@ -829,11 +812,6 @@ Text Label 6400 3150 0    50   ~ 0
 ~RST
 Wire Wire Line
 	6400 3150 6600 3150
-Wire Wire Line
-	6600 3150 6600 3100
-Wire Wire Line
-	6600 3150 6600 3200
-Connection ~ 6600 3150
 Text Label 10100 3100 0    50   ~ 0
 ~RST
 Wire Notes Line
@@ -879,12 +857,12 @@ AREF
 $Comp
 L power:GND #PWR014
 U 1 1 60F3DE15
-P 10200 4450
-F 0 "#PWR014" H 10200 4200 50  0001 C CNN
-F 1 "GND" H 10200 4300 50  0000 C CNN
-F 2 "" H 10200 4450 50  0001 C CNN
-F 3 "" H 10200 4450 50  0001 C CNN
-	1    10200 4450
+P 9750 4800
+F 0 "#PWR014" H 9750 4550 50  0001 C CNN
+F 1 "GND" H 9750 4650 50  0000 C CNN
+F 2 "" H 9750 4800 50  0001 C CNN
+F 3 "" H 9750 4800 50  0001 C CNN
+	1    9750 4800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1087,29 +1065,12 @@ Wire Wire Line
 Connection ~ 3650 5800
 Wire Wire Line
 	3650 5800 4150 5800
-Text Label 9450 5350 0    50   ~ 0
-PA4
 Text Label 7800 3300 0    50   ~ 0
 PA0
 Text Label 7800 3400 0    50   ~ 0
 PA1
 Text Notes 8800 4250 0    50   ~ 0
 Bottom Screw Terminal and header
-$Comp
-L Jumper:SolderJumper_2_Bridged JP2
-U 1 1 612864F8
-P 10150 4850
-F 0 "JP2" H 9950 4900 50  0000 C CNN
-F 1 "SolderJumper_2_Bridged" H 10150 4964 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 10150 4850 50  0001 C CNN
-F 3 "~" H 10150 4850 50  0001 C CNN
-	1    10150 4850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9450 4850 10000 4850
-Wire Wire Line
-	9450 4950 10000 4950
 Wire Wire Line
 	9450 5050 10000 5050
 Wire Wire Line
@@ -1118,17 +1079,6 @@ Wire Wire Line
 	9450 5250 10000 5250
 Wire Wire Line
 	9450 5350 10000 5350
-$Comp
-L Jumper:SolderJumper_2_Bridged JP3
-U 1 1 61320BC4
-P 10150 4950
-F 0 "JP3" H 9950 5000 50  0000 C CNN
-F 1 "SolderJumper_2_Bridged" H 10150 5064 50  0001 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" H 10150 4950 50  0001 C CNN
-F 3 "~" H 10150 4950 50  0001 C CNN
-	1    10150 4950
-	1    0    0    -1  
-$EndComp
 $Comp
 L Jumper:SolderJumper_2_Bridged JP4
 U 1 1 61320E17
@@ -1245,19 +1195,19 @@ $EndComp
 Wire Wire Line
 	1400 1400 1400 1300
 Connection ~ 1400 1400
-Text Label 9450 4950 0    50   ~ 0
-PA8
+Text Label 9450 5050 0    50   ~ 0
+PB3
 Wire Wire Line
 	8000 3150 7800 3150
 $Comp
 L power:+5V #PWR016
 U 1 1 610F27A0
-P 10400 4550
-F 0 "#PWR016" H 10400 4400 50  0001 C CNN
-F 1 "+5V" H 10415 4723 50  0000 C CNN
-F 2 "" H 10400 4550 50  0001 C CNN
-F 3 "" H 10400 4550 50  0001 C CNN
-	1    10400 4550
+P 10000 4850
+F 0 "#PWR016" H 10000 4700 50  0001 C CNN
+F 1 "+5V" H 10000 5000 50  0000 C CNN
+F 2 "" H 10000 4850 50  0001 C CNN
+F 3 "" H 10000 4850 50  0001 C CNN
+	1    10000 4850
 	1    0    0    -1  
 $EndComp
 Text Label 10200 4750 0    50   ~ 0
@@ -1274,19 +1224,15 @@ Wire Wire Line
 	10300 5150 10400 5150
 Wire Wire Line
 	10300 5050 10400 5050
-Wire Wire Line
-	10300 4950 10400 4950
-Wire Wire Line
-	10300 4850 10400 4850
 $Comp
-L Connector_Generic:Conn_01x11 J13
+L Connector_Generic:Conn_01x09 J13
 U 1 1 6114CA70
-P 10600 5050
-F 0 "J13" H 10500 5650 50  0000 L CNN
-F 1 "Conn_01x11" V 10700 5300 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x11_P2.54mm_Vertical" H 10600 5050 50  0001 C CNN
-F 3 "~" H 10600 5050 50  0001 C CNN
-	1    10600 5050
+P 10600 5150
+F 0 "J13" H 10500 5750 50  0000 L CNN
+F 1 "Conn_01x09" V 10700 5500 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical" H 10600 5150 50  0001 C CNN
+F 3 "~" H 10600 5150 50  0001 C CNN
+	1    10600 5150
 	1    0    0    -1  
 $EndComp
 Connection ~ 10400 5450
@@ -1295,12 +1241,6 @@ Wire Wire Line
 Connection ~ 10400 5550
 Wire Wire Line
 	10400 5550 10750 5550
-Connection ~ 10400 4850
-Wire Wire Line
-	10400 4850 10750 4850
-Connection ~ 10400 4950
-Wire Wire Line
-	10400 4950 10750 4950
 Connection ~ 10400 5050
 Wire Wire Line
 	10400 5050 10750 5050
@@ -1316,14 +1256,10 @@ Wire Wire Line
 Wire Wire Line
 	10200 4750 10400 4750
 Wire Wire Line
-	10200 4450 10300 4450
-Wire Wire Line
-	10300 4450 10300 4650
-Wire Wire Line
-	10300 4650 10400 4650
+	9750 4800 9900 4800
 NoConn ~ 6900 1600
 Text Notes 7000 6450 0    50   ~ 0
-8. Kolla upp strömförsörjning, VIN/12V/5V/3V3. Varifrån kommer allt? \n9. Skaffa footprint till kondensatorer C1,C2
+8. Kolla upp strömförsörjning, VIN/12V/5V/3V3. kolla så källans max effek toch den förbrukade effekten stämmer överens.\n9. Skaffa footprint till kondensatorer C1,C2
 Wire Notes Line
 	8750 4150 8750 5900
 Wire Notes Line
@@ -1338,10 +1274,10 @@ Connection ~ 5800 3800
 Wire Wire Line
 	1850 6150 3650 6150
 $Comp
-L Motorrumsstyrning-rescue:GND-power #PWR?
+L Motorrumsstyrning-rescue:GND-power #PWR0101
 U 1 1 6130AA47
 P 5800 4000
-F 0 "#PWR?" H 5800 3750 50  0001 C CNN
+F 0 "#PWR0101" H 5800 3750 50  0001 C CNN
 F 1 "GND" H 5805 3827 50  0000 C CNN
 F 2 "" H 5800 4000 50  0001 C CNN
 F 3 "" H 5800 4000 50  0001 C CNN
@@ -1361,4 +1297,34 @@ F 3 "~" H 5950 3800 50  0001 C CNN
 	1    5950 3800
 	1    0    0    -1  
 $EndComp
+NoConn ~ 7800 3500
+Wire Wire Line
+	6600 3100 6600 3150
+NoConn ~ 6600 4250
+Connection ~ 6600 3150
+Wire Wire Line
+	6600 3150 6600 3200
+$Comp
+L Motorrumsstyrning-rescue:Screw_Terminal_01x10-Connector J14
+U 1 1 60C79806
+P 10950 5250
+F 0 "J14" H 10900 5750 50  0000 L CNN
+F 1 "Screw_Terminal_01x10" V 11050 4800 50  0000 L CNN
+F 2 "Vera-MRS-21:TerminalBlock_Phoenix_MPT-0,5-10-2.54_1x10_P2.54mm_Horizontal" H 10950 5250 50  0001 C CNN
+F 3 "~" H 10950 5250 50  0001 C CNN
+	1    10950 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10750 4850 10400 4850
+Wire Wire Line
+	10400 4950 10750 4950
+Connection ~ 10400 4950
+Wire Wire Line
+	9900 4950 9900 4800
+Wire Wire Line
+	9900 4950 10400 4950
+Wire Wire Line
+	10000 4850 10400 4850
+Connection ~ 10400 4850
 $EndSCHEMATC
