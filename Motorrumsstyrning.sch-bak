@@ -647,8 +647,8 @@ Wire Notes Line
 Wire Notes Line
 	11150 4150 8750 4150
 Text Label 6600 3700 2    50   ~ 0
-Deadmans
-Text Label 6600 4350 2    50   ~ 0
+PB3
+Text Label 7800 4100 0    50   ~ 0
 Tachometer
 Wire Wire Line
 	8850 3500 9350 3500
@@ -708,7 +708,7 @@ Text Label 9450 5650 0    50   ~ 0
 Injector_IN
 Text Label 9450 5750 0    50   ~ 0
 Injector_OUT
-Text Label 6550 3900 2    50   ~ 0
+Text Label 6600 3900 2    50   ~ 0
 Start_Enable
 $Comp
 L Transistor_BJT:BC337 Q1
@@ -778,8 +778,8 @@ Text Label 7800 3600 0    50   ~ 0
 PA3
 Text Label 6600 3800 2    50   ~ 0
 PB4
-Text Label 7800 4100 0    50   ~ 0
-PA8
+Text Label 6600 4350 2    50   ~ 0
+Deadmans
 Text Label 9450 5150 0    50   ~ 0
 PA0
 Text Label 9450 5250 0    50   ~ 0
@@ -1196,7 +1196,7 @@ Wire Wire Line
 	1400 1400 1400 1300
 Connection ~ 1400 1400
 Text Label 9450 5050 0    50   ~ 0
-PA8
+PB3
 Wire Wire Line
 	8000 3150 7800 3150
 $Comp
