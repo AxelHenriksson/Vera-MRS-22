@@ -687,42 +687,42 @@ Start_Enable
 $Comp
 L Transistor_BJT:BC337 Q1
 U 1 1 60C819FD
-P 10050 1000
-F 0 "Q1" H 10241 1046 50  0000 L CNN
-F 1 "BC337" H 10241 955 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 10250 925 50  0001 L CIN
-F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bc337.pdf" H 10050 1000 50  0001 L CNN
-	1    10050 1000
+P 9800 1000
+F 0 "Q1" H 9991 1046 50  0000 L CNN
+F 1 "BC337" H 9991 955 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 10000 925 50  0001 L CIN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bc337.pdf" H 9800 1000 50  0001 L CNN
+	1    9800 1000
 	1    0    0    -1  
 $EndComp
-Text Label 10850 800  2    50   ~ 0
+Text Label 11100 800  2    50   ~ 0
 Start_Relay_GND
 $Comp
 L power:GND #PWR06
 U 1 1 60C82964
-P 10150 1200
-F 0 "#PWR06" H 10150 950 50  0001 C CNN
-F 1 "GND" H 10155 1027 50  0000 C CNN
-F 2 "" H 10150 1200 50  0001 C CNN
-F 3 "" H 10150 1200 50  0001 C CNN
-	1    10150 1200
+P 9900 1200
+F 0 "#PWR06" H 9900 950 50  0001 C CNN
+F 1 "GND" H 9905 1027 50  0000 C CNN
+F 2 "" H 9900 1200 50  0001 C CNN
+F 3 "" H 9900 1200 50  0001 C CNN
+	1    9900 1200
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R1
 U 1 1 60C832BB
-P 9750 1000
-F 0 "R1" V 9554 1000 50  0000 C CNN
-F 1 "1k" V 9645 1000 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 9750 1000 50  0001 C CNN
-F 3 "~" H 9750 1000 50  0001 C CNN
-	1    9750 1000
+P 9500 1000
+F 0 "R1" V 9304 1000 50  0000 C CNN
+F 1 "1k" V 9395 1000 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 9500 1000 50  0001 C CNN
+F 3 "~" H 9500 1000 50  0001 C CNN
+	1    9500 1000
 	0    1    1    0   
 $EndComp
-Text Label 9150 1000 0    50   ~ 0
+Text Label 8900 1000 0    50   ~ 0
 Start_Enable
 Wire Wire Line
-	9650 1000 9150 1000
+	9400 1000 8900 1000
 Text Label 10850 1550 2    50   ~ 0
 Injector_IN
 Text Label 10850 1950 2    50   ~ 0
@@ -730,24 +730,24 @@ Injector_OUT
 $Comp
 L Transistor_BJT:BC337 Q2
 U 1 1 60C8DD08
-P 10050 1750
-F 0 "Q2" H 10241 1796 50  0000 L CNN
-F 1 "BC337" H 10241 1705 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 10250 1675 50  0001 L CIN
-F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bc337.pdf" H 10050 1750 50  0001 L CNN
-	1    10050 1750
+P 9650 1750
+F 0 "Q2" H 9841 1796 50  0000 L CNN
+F 1 "BC337" H 9841 1705 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 9850 1675 50  0001 L CIN
+F 3 "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bc337.pdf" H 9650 1750 50  0001 L CNN
+	1    9650 1750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	10850 1950 10150 1950
 Wire Wire Line
-	10150 1550 10850 1550
+	9750 1550 10150 1550
 Text Label 7800 2000 0    50   ~ 0
 Injector_Enable
-Text Label 9150 1750 0    50   ~ 0
+Text Label 8900 1750 0    50   ~ 0
 Injector_Enable
 Wire Wire Line
-	9150 1750 9850 1750
+	8900 1750 9450 1750
 Text Label 7800 1900 0    50   ~ 0
 PA3
 Text Label 6600 2100 2    50   ~ 0
@@ -792,8 +792,6 @@ Wire Notes Line
 	11150 5900 8750 5900
 Text Notes 8800 2350 0    50   ~ 0
 Left Screw Terminal
-Wire Wire Line
-	10150 800  10850 800 
 Wire Notes Line
 	11150 2150 8750 2150
 Wire Notes Line
@@ -1322,4 +1320,48 @@ F 3 "" H 10400 4750 50  0001 C CNN
 	1    10400 4750
 	1    0    0    -1  
 $EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP9
+U 1 1 613A7272
+P 10300 1000
+F 0 "JP9" V 10250 1100 50  0000 L CNN
+F 1 "Start_Relay_Override" V 10350 1100 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 10300 1000 50  0001 C CNN
+F 3 "~" H 10300 1000 50  0001 C CNN
+	1    10300 1000
+	0    1    -1   0   
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP8
+U 1 1 613B8773
+P 10150 1750
+F 0 "JP8" V 10100 1850 50  0000 L CNN
+F 1 "Injector_Override" V 10200 1850 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 10150 1750 50  0001 C CNN
+F 3 "~" H 10150 1750 50  0001 C CNN
+	1    10150 1750
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	10150 1600 10150 1550
+Connection ~ 10150 1550
+Wire Wire Line
+	10150 1550 10850 1550
+Wire Wire Line
+	10150 1900 10150 1950
+Connection ~ 10150 1950
+Wire Wire Line
+	10150 1950 9750 1950
+Wire Wire Line
+	9900 800  10300 800 
+Wire Wire Line
+	10300 850  10300 800 
+Connection ~ 10300 800 
+Wire Wire Line
+	10300 800  11100 800 
+Wire Wire Line
+	10300 1150 10300 1200
+Wire Wire Line
+	10300 1200 9900 1200
+Connection ~ 9900 1200
 $EndSCHEMATC
