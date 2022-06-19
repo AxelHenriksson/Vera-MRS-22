@@ -1,0 +1,10 @@
+../Core/Src/main.c:85:5:main	80	static
+../Core/Src/main.c:152:6:SystemClock_Config	88	static
+../Core/Src/main.c:190:6:printString2	16	static
+../Core/Src/main.c:193:6:printString1	16	static
+../Core/Src/main.c:196:6:print2	16	static
+../Core/Src/main.c:199:6:print1	16	static
+../Core/Src/main.c:206:6:HAL_GPIO_EXTI_Rising_Callback	16	static
+../Core/Src/main.c:212:6:HAL_GPIO_EXTI_Falling_Callback	16	static
+../Core/Src/main.c:231:6:tachTimerIRQHandler	32	static
+../Core/Src/main.c:254:6:Error_Handler	8	static,ignoring_inline_asm
